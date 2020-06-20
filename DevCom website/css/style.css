@@ -273,6 +273,9 @@ table {
   width: 100%;
   height: 100%;
   z-index: -999999;
+
+  /*filter: blur(4px);*/
+  /*-webkit-filter: blur(4px);*/
 }
 
 .parallax .cover img {
@@ -4151,7 +4154,8 @@ section.parallax-features-section .section-features {
 }
 
 section.parallax-features-section .section-features .phone img {
-  margin-bottom: -90%;
+  margin-bottom: -50%;
+  border-radius: 3%;
 }
 
 section.parallax-features-section .section-features .text-left {
@@ -4185,8 +4189,8 @@ section.parallax-features-section .section-features .feature .text-wrap {
 }
 
 section.parallax-features-section .section-features .feature .text-wrap h3 {
-  color: #21c2f8;
-  font-size: 1.25rem;
+  color: #fff;
+  font-size: 1.4rem;
   margin-bottom: 10px;
 }
 

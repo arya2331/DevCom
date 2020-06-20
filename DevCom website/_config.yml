@@ -47,7 +47,7 @@ jekyll-archives:
 #######################################################
 
 # This is your site title
-title: Cyber Code Bear
+title: DevCom IITB
 # Website language
 lang: en-US
 # Header Title
@@ -62,7 +62,7 @@ headter-tagline: I built this
 # Focus Buttons
 header-focus-button:
   title: Blog
-  url: https://cybercodebear.github.io/blog.html
+  url: https://cybercodebear.github.io/blog.html # test
 
 #
 # This is your email adress, contact from send here all emails from contact section
@@ -113,8 +113,8 @@ about-widget:
 #####################################
 #############   About   #############
 #####################################
-about-title: Welcome to the den
-about-description: During the first programming course I ever completed my instructor always told me that I should always ask the bear on her desk my question and if I still had the question then I could ask her... I don't think I ever asked her a question that semester. 
+# about-title: 
+about-description: This is the official page for the Developer's Community of IIT Bombay. Envisioned as the group of best developers of the Institute, the team is responsible for developing and maintaining InstiApp, and other dev/tech related projects in the Institute.
 
 
 #####################################
