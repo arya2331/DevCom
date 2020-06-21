@@ -3617,6 +3617,8 @@ header.site-header .arrow-down-section .arrow-down i:before {
   header.site-header .header-banner .heading-title h2 {
     font-size: 1.75rem;
   }
+
+
   header.site-header .site-navigation-bar .navigation-bar {
     left: 60%;
     width: 40%;
@@ -4151,6 +4153,11 @@ section.parallax-features-section header.section-header hr {
 
 section.parallax-features-section .section-features {
   margin-top: 80px;
+}
+
+section.parallax-features-section .section-features .phone img {
+  margin-bottom: -50%;
+  border-radius: 3%;
 }
 
 section.parallax-features-section .section-features .phone img {
