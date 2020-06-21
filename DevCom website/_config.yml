@@ -136,6 +136,21 @@ features:
     description: test
 
 #####################################
+##########       Team      ##########
+#####################################
+team-title: Team
+team-description: ...team...
+
+team:
+  - avatar: profile.jpg
+    name: test
+    tagline: test
+    youtube: test
+    pinterest: test
+    facebook: test
+    github: test
+
+#####################################
 ##########     Portfolio    ##########
 #####################################
 portfolio-title: Projects
