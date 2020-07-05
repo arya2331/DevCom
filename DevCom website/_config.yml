@@ -23,7 +23,7 @@ url: "http://localhost:3000"
 ####################################
 ######   Optional Features    ######
 ####################################
-smooth-scroll: false
+smooth-scroll: True
 
 ####################################
 ###########   Plugins    ###########
@@ -47,11 +47,11 @@ jekyll-archives:
 #######################################################
 
 # This is your site title
-title: Cyber Code Bear
+title: DevCom IITB
 # Website language
 lang: en-US
 # Header Title
-header-title: with my <strong>BEAR</strong> hands
+header-title: DevCom IITB
 # Header Tagline
 headter-tagline: I built this
 
@@ -62,7 +62,7 @@ headter-tagline: I built this
 # Focus Buttons
 header-focus-button:
   title: Blog
-  url: https://cybercodebear.github.io/blog.html
+  url: https://cybercodebear.github.io/blog.html # test
 
 #
 # This is your email adress, contact from send here all emails from contact section
@@ -113,14 +113,110 @@ about-widget:
 #####################################
 #############   About   #############
 #####################################
-about-title: Welcome to the den
-about-description: During the first programming course I ever completed my instructor always told me that I should always ask the bear on her desk my question and if I still had the question then I could ask her... I don't think I ever asked her a question that semester. 
+# about-title: 
+about-description: This is the official page for the Developer's Community of IIT Bombay. Envisioned as the group of best developers of the Institute, the team is responsible for developing and maintaining InstiApp, and other dev/tech related projects in the Institute.
 
+#####################################
+##########     Features    ##########
+#####################################
+features-title: Features
+features-description: ...features...
+
+features:
+  - icon: pe-7s-vector
+    title: test1
+    description: test 
+
+  - icon: pe-7s-help2
+    title: test2
+    description: test
+
+  - icon: pe-7s-airplay
+    title: test3
+    description: test
+
+#####################################
+##########       Team      ##########
+#####################################
+team-title: Team
+team-description: ...team...
+
+team:
+  - avatar: profile.jpg
+    name: test
+    tagline: test
+    youtube: test
+    pinterest: test
+    facebook: test
+    github: test
+
+#####################################
+##########     Portfolio    ##########
+#####################################
+portfolio-title: Projects
+portfolio-description: ...projects...
+
+portfolio-categories:
+  - Websites
+  - Android
+  - iOS
+  - Logo
+  - Graphic Design
+  - Video
+
+portfolio:
+  - title: InstiApp
+    categories:
+      - Android
+      - iOS
+      - Websites
+    url: #add url
+    image: img-05.jpg
+
+  - title: test2
+    categories:
+      - Logo
+      - Video
+      - Websites
+    url: #add url
+    image: img-01.jpg
+
+  - title: test3
+    categories:
+      - Android
+      - Graphic Design
+      - Websites
+    url: #add url
+    image: img-02.jpg
+
+  - title: test4
+    categories:
+      - Android
+      - iOS
+      - Websites
+    url: #add url
+    image: img-03.jpg
+
+  - title: test5
+    categories:
+      - Video
+      - iOS
+      - Logo
+    url: #add url
+    image: img-04.jpg
+
+  - title: test6
+    categories:
+      - Graphic Design
+      - Video
+      - Websites
+    url: #add url
+    image: img-08.jpg
 
 #####################################
 ##########  Core Features  ##########
 #####################################
-core-title: Personal Attributes
+core-title: Projects
 core-description: Currently open to opportunities within cyber security. Below is a small portion of what I can offer.
 
 #

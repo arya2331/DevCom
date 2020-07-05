@@ -273,6 +273,9 @@ table {
   width: 100%;
   height: 100%;
   z-index: -999999;
+
+  /*filter: blur(4px);*/
+  /*-webkit-filter: blur(4px);*/
 }
 
 .parallax .cover img {
@@ -3021,104 +3024,6 @@ blockquote:before {
   }
 }
 
-.page-loader {
-  display: block;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 1;
-  background: #f4f8f9;
-  -webkit-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
-  z-index: 99999999999;
-}
-
-.page-loader .load-icon {
-  display: block;
-  position: relative;
-  width: 70px;
-  height: 70px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.page-loader .load-icon:before, .page-loader .load-icon:after {
-  content: '';
-  display: block;
-  position: absolute;
-  background: rgba(33, 194, 248, 0.2);
-  width: 100%;
-  height: 100%;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-}
-
-.page-loader .load-icon:before {
-  -webkit-animation: sera-loader-in .85s linear 0s alternate infinite;
-          animation: sera-loader-in .85s linear 0s alternate infinite;
-}
-
-.page-loader .load-icon:after {
-  -webkit-animation: sera-loader-out .85s linear 0s alternate infinite;
-          animation: sera-loader-out .85s linear 0s alternate infinite;
-}
-
-.page-loader.load-complete {
-  height: 0;
-  opacity: 0;
-}
-
-.go-to-top-button {
-  position: fixed;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  border: 1px solid #21c2f8;
-  background: rgba(244, 248, 249, 0.2);
-  -webkit-transform: translate3d(0, -webkit-calc(130% + 50px), 0);
-          transform: translate3d(0, calc(130% + 50px), 0);
-  -webkit-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-  z-index: 9999;
-}
-
-.go-to-top-button i {
-  font-size: 3.2rem;
-}
-
-.go-to-top-button:hover {
-  color: #fff;
-  background: #21c2f8;
-}
-
-.go-to-top-button.active {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
 /**
  *
  *  Header Style
@@ -3250,6 +3155,28 @@ header.site-header .header-banner .heading-content .buttons-header .button-cta {
   width: 100%;
 }
 
+header.site-header .header-banner .buttons-header .button-cta div {
+  margin: auto;
+  width: 100%;
+}
+header.site-header .header-banner .heading-title img {
+  border-radius: 3%;
+  width: 35%;
+  height: auto;
+  margin: auto;
+  display: block;
+  opacity: 0.1;
+}
+
+header.site-header .header-banner .heading-title img:hover {
+  border-radius: 3%;
+  width: 35%;
+  height: auto;
+  margin: auto;
+  display: block;
+  opacity: 0.8;
+}
+
 header.site-header .arrow-down-section {
   position: absolute;
   width: 100%;
@@ -3358,8 +3285,9 @@ header.site-header .arrow-down-section .arrow-down i:before {
     top: 0;
     left: 15px;
     min-height: 60px;
-    background: #21c2f8;
+    background: #0083cf;
     z-index: 99999999999999;
+    opacity: 0.9;
   }
   header.site-header .site-navigation-bar .navigation-bar {
     display: block;
@@ -3614,6 +3542,22 @@ header.site-header .arrow-down-section .arrow-down i:before {
   header.site-header .header-banner .heading-title h2 {
     font-size: 1.75rem;
   }
+
+  header.site-header .header-banner .buttons-header .button-cta div {
+    margin: auto;
+    width: 30%;
+    text-align: center;
+
+  }
+  header.site-header .header-banner .heading-title img {
+    border-radius: 3%;
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+
   header.site-header .site-navigation-bar .navigation-bar {
     left: 60%;
     width: 40%;
@@ -3649,6 +3593,16 @@ header.site-header .arrow-down-section .arrow-down i:before {
   header.site-header .header-banner .buttons-header .button-cta {
     font-size: 1rem;
   }
+  header.site-header .header-banner .buttons-header .button-cta div {
+    margin: auto;
+    width: 100%;
+  }
+  header.site-header .header-banner .heading-title img {
+    border-radius: 3%;
+    width: 100%;
+    height: auto;
+  }
+
 }
 
 /**
@@ -4016,6 +3970,7 @@ section.portfolio-section .portfolio-grid .item .img-wrap {
 section.portfolio-section .portfolio-grid .item .img-wrap img {
   width: 100%;
   display: block;
+
 }
 
 section.portfolio-section .portfolio-grid .item.visible {
@@ -4151,7 +4106,13 @@ section.parallax-features-section .section-features {
 }
 
 section.parallax-features-section .section-features .phone img {
-  margin-bottom: -90%;
+  margin-bottom: -50%;
+  border-radius: 3%;
+}
+
+section.parallax-features-section .section-features .phone img {
+  margin-bottom: -50%;
+  border-radius: 3%;
 }
 
 section.parallax-features-section .section-features .text-left {
@@ -4185,8 +4146,8 @@ section.parallax-features-section .section-features .feature .text-wrap {
 }
 
 section.parallax-features-section .section-features .feature .text-wrap h3 {
-  color: #21c2f8;
-  font-size: 1.25rem;
+  color: #fff;
+  font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
@@ -4499,6 +4460,8 @@ section.blog-section .blog-articles-container article.blog-article {
 
 section.blog-section .blog-articles-container article.blog-article.blog-single-page header.article-header .article-title {
   margin: 50px 0;
+  text-align: center;
+  margin: auto;
 }
 
 section.blog-section .blog-articles-container article.blog-article.blog-single-page header.article-header .article-title h3.title {
@@ -4517,6 +4480,14 @@ section.blog-section .blog-articles-container article.blog-article header.articl
   display: block;
   width: 100%;
   height: auto;
+}
+
+section.blog-section .blog-articles-container article.blog-article header.article-header .img-wrap img{
+  border-radius: 5%;
+  width: 70%;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section.blog-section .blog-articles-container article.blog-article header.article-header .article-title {
@@ -4550,6 +4521,8 @@ section.blog-section .blog-articles-container article.blog-article .article-cont
   position: relative;
   float: left;
   width: 100%;
+  text-align: center;
+  margin: auto;
 }
 
 section.blog-section .blog-articles-container article.blog-article .article-content .article-date {
@@ -4565,6 +4538,7 @@ section.blog-section .blog-articles-container article.blog-article .article-cont
   padding-bottom: 100%;
   margin-bottom: 5px;
   background: #21c2f8;
+  border-radius: 50%;
 }
 
 section.blog-section .blog-articles-container article.blog-article .article-content .article-date .date .day {
@@ -4579,29 +4553,34 @@ section.blog-section .blog-articles-container article.blog-article .article-cont
   width: 100%;
   padding: 10px 0;
   background: #21c2f8;
+  border-radius: 50%;
 }
 
 section.blog-section .blog-articles-container article.blog-article .article-content .article-text {
-  width: -webkit-calc(100% - 100px);
-  width: calc(100% - 100px);
+  /*width: -webkit-calc(100% - 100px);*/
+  /*width: calc(100% - 100px);*/
   font-size: 0.9rem;
   float: left;
+  text-align: center;
 }
 
 section.blog-section .blog-articles-container article.blog-article .article-content .article-text p {
   line-height: 1.4;
+  width: 100%;
 }
 
 section.blog-section .blog-articles-container article.blog-article .article-content .show-more {
   display: block;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
+  /*margin-left: 100px;*/
   text-align: center;
   float: left;
 }
 
 section.blog-section .blog-articles-container article.blog-article .article-content .show-more .button {
   float: left;
+  background-color: #f0faff;
   margin: 0 0 0 100px;
 }
 
@@ -4611,7 +4590,7 @@ section.blog-section .view-posts hr.normal {
 
 section.blog-section .view-posts .button-cta {
   margin-bottom: 0;
-  float: inherit !important;
+  float: inherit !important;  
 }
 
 /**

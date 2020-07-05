@@ -24,8 +24,9 @@
       <!-- Jekyll LOOP -->
       {% for post in site.posts limit:3 %}
 
+      <div>
         <!-- Blog Article -->
-        <div class="col-md-4 col-md-push-0 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1">
+        <div class="col-md-4 col-md-push-0 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1" style="text-align: center;">
           <article class="blog-article clearfix">
 
             <!-- Article Header -->
@@ -40,23 +41,24 @@
             </header>
 
             <!-- Article Content -->
-            <div class="article-content">
-              <div class="article-date text-center">
+            <div class="article-content" style="text-align: center; margin: auto;">
+              <!-- <div class="article-date text-center">
                 <div class="date parent">
                   <div class="date-wrap child-center">
                     <div class="day">{{ post.date | date: "%d" }}</div>
                     <div class="month">{{ post.date | date: "%b" }}</div>
                   </div>
                 </div>
-                <div class="time">{{ post.date | date: "%H:%M" }}</div>
-              </div>
-              <div class="article-text">
-                <p>{{ post.excerpt | strip_html }}</p>
+              </div> -->
+              <div class="article-text" style="text-align: center;">
+                <p style="">{{ post.excerpt | strip_html }}</p>
               </div>
               <div class="show-more">
-                <a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a>
+                <a href="{{ site.baseurl }}{{ post.url }}" class="button" >Read More</a>
               </div>
-            </div>
+            </div>        
+      </div>
+
 
           </article>
         </div>
