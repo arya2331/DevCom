@@ -4567,7 +4567,17 @@ section.blog-section .blog-articles-container article.blog-article .article-cont
 section.blog-section .blog-articles-container article.blog-article .article-content .article-text p {
   line-height: 1.4;
   width: 100%;
+
 }
+
+section.blog-section .blog-articles-container article.blog-article .article-content .article-text p:hover, p:focus, p:active {
+  line-height: 1.4;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+
+}
+
 
 section.blog-section .blog-articles-container article.blog-article .article-content .show-more {
   display: block;
