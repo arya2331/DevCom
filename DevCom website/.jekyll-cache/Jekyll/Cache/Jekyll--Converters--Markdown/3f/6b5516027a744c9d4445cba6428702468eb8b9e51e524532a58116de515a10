@@ -1,0 +1,102 @@
+I"�<h2 id="scenario">Scenario</h2>
+<p>&nbsp;</p>
+<p>The company you work for supplies employees with a laptop to take away for work so that they can VPN back into the company servers. Everytime an employee loans a laptop from the IT they must sign an appropriate use form which states the laptop can only be used for work purposes.</p>
+
+<p>An employee who recently has loaned out a laptop has noticed in the recent documents section within Explorer there are video files that look like adult content. Since this would constitute inappropriate behaviour the employee reported this to management and they have come to you as the analyst to figure out who it was. Below is an image of what the reporting employee saw.</p>
+<p>&nbsp;</p>
+<p><img src="https://cybercodebear.github.io/images/blog/inaprop_content/content_proof.jpg" alt="Image of content seen" /></p>
+
+<p>The system admin has also collected some data for you before reimaging the laptop. Hopefully this is enough for your investigation…. oh and the system admin also told you that everyone uses the same IEUser account and they just track who the laptop is loaned out to in a text file.</p>
+<p>&nbsp;</p>
+<h2 id="task">Task</h2>
+<p>&nbsp;</p>
+<p>For a small task like this you will most likely have a good idea of what you’ll need to find but it is good practice to put pen to paper and write out a small plan of the evidence that you will need and roughly what tools you will use.</p>
+<p>&nbsp;</p>
+<h2 id="attempt-the-task">Attempt the task</h2>
+<p>&nbsp;</p>
+<p>Below the task files section is the solution along with my own thought process for this task. If you have some ability then plan out the task, download the content on this page, and attempt to complete this before looking at what I have done.</p>
+<p>&nbsp;</p>
+<h2 id="task-files">Task files</h2>
+<p>&nbsp;</p>
+<p>Download the files by clicking on the icon below;</p>
+<p>&nbsp;</p>
+<p><a href="https://cybercodebear.github.io/images/blog/downloads/Prove-an-employee-viewed-inappropriate-content.7z"><img src="https://cybercodebear.github.io/images/blog/inaprop_content/vm-icon-png-icon.jpg" alt="button" /></a></p>
+<p>&nbsp;</p>
+<h2 id="solution-video">Solution: Video</h2>
+<p>&nbsp;</p>
+<p>I have now created a video that will step through how to, create the VM’s to make this task; acquire the data that was downloaded in the zip; do the task.</p>
+<p>&nbsp;</p>
+<p><a href="https://youtu.be/0oLy34oPzw0"><img src="http://i3.ytimg.com/vi/0oLy34oPzw0/maxresdefault.jpg" alt="Alt text" /></a></p>
+<p>&nbsp;</p>
+<h3 id="planning">Planning</h3>
+<p>&nbsp;</p>
+<p>When I initially got this task the first thing I did was fire up the laptop and had a look at what the employee who reported the issue could see. This was to confirm that they were telling the truth and that it would be worth while continuing further. I was not worried about overriding evidence because I didn’t plan on opening any files that would overwrite this list.</p>
+<p>&nbsp;</p>
+<p><img src="https://cybercodebear.github.io/images/blog/inaprop_content/content_proof.jpg" alt="Image of content seen" /></p>
+
+<p>As we can see from above it looks like a user has been looking at inappropriate content with those names. To bad the output doesn’t give us the date and time it was plugged in.</p>
+
+<h3 id="tools">Tools</h3>
+<p>&nbsp;</p>
+<p>What we do have is that these files are listed under the <em>Recent Files</em> heading in explorer. I know from experience I’m probably going to want to look in the registry (using <a href="https://ericzimmerman.github.io/#!index.md">Registry Explorer</a>) for the values associated with this key to hopefully get an answer.</p>
+
+<p>Registry Explorer is ideal because it collates a lot of information I would normally have to do myself. I will add a section on Zimmerman tools that I use in the <a href="https://cybercodebear.github.io/analyst-playbook">analyst playbook</a> later.</p>
+
+<h3 id="research">Research</h3>
+<p>&nbsp;</p>
+<p>Let’s google where we might be able to find the key we’re after. The google search I used was;</p>
+<p>&nbsp;</p>
+<p><img src="https://cybercodebear.github.io/images/blog/inaprop_content/google-search.png" alt="google search" /></p>
+
+<p>Looking down the page I can see that a NirSoft blog that may be interesting;</p>
+<p>&nbsp;</p>
+<p><img src="https://cybercodebear.github.io/images/blog/inaprop_content/4th-result.png" alt="4th result" /></p>
+
+<p>Now remember that the user that we currently have data for is the IEUser. With that in mind load up the <em>NTUSER.dat</em> hive.</p>
+
+<h3 id="first-look">First look</h3>
+<p>&nbsp;</p>
+<p>Run Registry Explorer on your Windows machine and then go <em>File &gt; Open Hive</em> like in the picture below.</p>
+<p>&nbsp;</p>
+<p><img src="https://cybercodebear.github.io/images/blog/inaprop_content/load-hive.png" alt="Open hive" /></p>
+
+<p>Then for the next image select <em>No</em>.</p>
+<p>&nbsp;</p>
+<p><img src="https://cybercodebear.github.io/images/blog/inaprop_content/combine-hive.png" alt="Combine hive" /></p>
+
+<p>The when it asks you to load a dirty hive, select <em>Yes</em>.</p>
+<p>&nbsp;</p>
+<p><img src="https://cybercodebear.github.io/images/blog/inaprop_content/dirty-hive.png" alt="Dirty hive" /></p>
+
+<p>Hmm the key that NirSoft told us to go to, <em>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU</em>, has somethings that appear in that recent file list but not the ones we’re after.</p>
+
+<h3 id="more-research">More research</h3>
+<p>&nbsp;</p>
+<p>Let’s turn back to the google search and look further. Maybe two search results down might help.</p>
+<p>&nbsp;</p>
+<p><img src="https://cybercodebear.github.io/images/blog/inaprop_content/further-research.png" alt="further reseach" /></p>
+
+<p>After reading the <a href="https://www.nextofwindows.com/windows-10-tip-how-to-clean-up-file-explorer-recent-history">blog</a> the <em>typedpaths</em> key looks like it might be good to try.</p>
+
+<h3 id="second-look">Second look</h3>
+<p>&nbsp;</p>
+<p>Navigating to it in Regsitry Explorer gives the following;</p>
+<p>&nbsp;</p>
+<p><img src="https://cybercodebear.github.io/images/blog/inaprop_content/my-typed-paths.png" alt="typedpaths" /></p>
+
+<h3 id="analysts-hunch">Analyst’s hunch</h3>
+<p>&nbsp;</p>
+<p>Buh-bow doesn’t look good for us. However that’s two keys in the same parent key! So maybe I might just click around in, <em>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer</em>, and see what I can find in here….</p>
+<p>&nbsp;</p>
+<p><img src="https://cybercodebear.github.io/images/blog/inaprop_content/my-recentdocs.png" alt="my recentdocs" /></p>
+
+<p>Would you look at that! The subkey breaks down into file types. I know from the original evidence I’m looking for mp4 files and now I have the files I’m after and a time stamp, 2019-12-21 09:12:29!</p>
+
+<h3 id="connecting-the-dots">Connecting the dots</h3>
+<p>&nbsp;</p>
+<p>Now all I need to do is compare the loaned laptop list with the time stamp and I’ll have the answer.</p>
+<p>&nbsp;</p>
+<p><img src="https://cybercodebear.github.io/images/blog/inaprop_content/loan-history.png" alt="loan history" /></p>
+
+<p>Well it looks like the culprit is Navid Flyde, make sure you do a report and submit this to your manager before archiving the evidence.</p>
+:ET
