@@ -1,0 +1,291 @@
+#
+# Sera - OnePage Jekyll Template
+# Configuration File
+#
+
+# Information for compile
+exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md"]
+
+#
+# If your website is placed in a separate folder on your server please modify
+# this with your folder name, by default is empty.
+# Example: Sera Demo is hosted on projects.gleesik.ro/sera-onepage
+# If I compile Sera Template and I put in /sera-onepage without modifing baseurl
+# than scripts can't be loaded corectly.
+# For this example my site url is: projects.gleesik.ro (This can be just www.example.com)
+# My folder for Demo Website is: /sera-onepage so baseurl: /sera-onepage
+#
+baseurl:
+
+# the base hostname & protocol for your site
+url: "http://localhost:3000"
+
+####################################
+######   Optional Features    ######
+####################################
+smooth-scroll: True
+
+####################################
+###########   Plugins    ###########
+####################################
+plugins:
+  - jekyll-archives # Sorry, not GitHub pages friendly!
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: 'archive'
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
+
+#######################################################
+#######################################################
+###############   HEADER INFORMATIONS   ###############
+#######################################################
+#######################################################
+
+# This is your site title
+title: DevCom IITB
+# Website language
+lang: en-US
+# Header Title
+header-title: DevCom IITB
+# Header Tagline
+headter-tagline: I built this
+
+####################################
+######   CTA Header Buttons   ######
+####################################
+
+# Focus Buttons
+header-focus-button:
+  title: Blog
+  url: https://cybercodebear.github.io/blog.html # test
+
+#
+# This is your email adress, contact from send here all emails from contact section
+# IMPORTANT: you can modify contact form from this static template, but now works contact form works with a free external server
+# To configure this contact form, first please send a fictive email afeter you enter below your email and verify that :)
+#
+email: alexjamesdesmond@gmail.com
+
+# Offer Banner Link
+# Default link is a link to all Sera OnePage products
+banner-link: https://cybercodebear.github.io
+
+####################################
+######  Global Social Links   ######
+####################################
+youtube: 'https://www.youtube.com/channel/UC5JmJiob-C9u9tWhRXD-rag'
+twitter: 'https://twitter.com/cybercodebear'
+reddit: 'https://www.reddit.com/user/alexjamesdesmond/'
+linkedin: 'https://www.linkedin.com/in/alexjamesdesmond/'
+
+#########################
+######   Widgets   ######
+#########################
+
+#
+# About Blog Author Widget
+#
+about-widget:
+  author-avatar: codebear.jpg
+  author-name: Alex Desmond
+  author-tagline: Hobbyist
+  author-info: Interested in infosec both at work and home. 
+  author-social-links:
+    youtube: 'https://www.youtube.com/channel/UC5JmJiob-C9u9tWhRXD-rag'
+    twitter: 'https://twitter.com/cybercodebear'
+    reddit: 'https://www.reddit.com/user/alexjamesdesmond/'
+    linkedin: 'https://www.linkedin.com/in/alexjamesdesmond/'
+
+####
+#
+# Hi you now use Sera - OnePage Jekyll Template created by Gleesik™
+#
+# Below are each section from the website in order from top to bottom
+# @TODO Edit each sections with your real information and each section from Sera will autocomplete with your information
+#
+####
+
+#####################################
+#############   About   #############
+#####################################
+# about-title: 
+about-description: This is the official page for the Developer's Community of IIT Bombay. Envisioned as the group of best developers of the Institute, the team is responsible for developing and maintaining InstiApp, and other dev/tech related projects in the Institute.
+
+#####################################
+##########     Features    ##########
+#####################################
+features-title: Features
+features-description: ...features...
+
+features:
+  - icon: pe-7s-vector
+    title: test1
+    description: test 
+
+  - icon: pe-7s-help2
+    title: test2
+    description: test
+
+  - icon: pe-7s-airplay
+    title: test3
+    description: test
+
+#####################################
+##########       Team      ##########
+#####################################
+team-title: Team
+team-description: ...team...
+
+team:
+  - avatar: profile.jpg
+    name: test
+    tagline: test
+    youtube: test
+    pinterest: test
+    facebook: test
+    github: test
+
+#####################################
+##########     Portfolio    ##########
+#####################################
+portfolio-title: Projects
+portfolio-description: ...projects...
+
+portfolio-categories:
+  - Websites
+  - Android
+  - iOS
+  - Logo
+  - Graphic Design
+  - Video
+
+portfolio:
+  - title: InstiApp
+    categories:
+      - Android
+      - iOS
+      - Websites
+    url: #add url
+    image: img-05.jpg
+
+  - title: test2
+    categories:
+      - Logo
+      - Video
+      - Websites
+    url: #add url
+    image: img-01.jpg
+
+  - title: test3
+    categories:
+      - Android
+      - Graphic Design
+      - Websites
+    url: #add url
+    image: img-02.jpg
+
+  - title: test4
+    categories:
+      - Android
+      - iOS
+      - Websites
+    url: #add url
+    image: img-03.jpg
+
+  - title: test5
+    categories:
+      - Video
+      - iOS
+      - Logo
+    url: #add url
+    image: img-04.jpg
+
+  - title: test6
+    categories:
+      - Graphic Design
+      - Video
+      - Websites
+    url: #add url
+    image: img-08.jpg
+
+#####################################
+##########  Core Features  ##########
+#####################################
+core-title: Projects
+core-description: Currently open to opportunities within cyber security. Below is a small portion of what I can offer.
+
+#
+# Core Features Left
+#
+core-features-left:
+
+# Feature
+- name: Values Driven
+  description: Professionalism, integrity, innovation, teamwork, excellence, dedication are my top values.
+  icon: pe-7s-user
+
+# Feature
+- name: Time Management
+  description: Prioritisation of tasks to ensure deadlines are met.
+  icon: pe-7s-wristwatch
+
+# Feature
+- name: Social
+  description: A good work culture is important. This is built through effectively building work relationships with my team. 
+  icon: pe-7s-coffee
+
+# Feature
+- name: Reporting
+  description: Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.
+  icon: pe-7s-file
+
+#
+# Core Features Right
+#
+core-features-right:
+
+# Feature
+- name: Results Oriented
+  description: Clearly defines outcomes and strives to deliver outstanding results.
+  icon: pe-7s-cup
+
+# Feature
+- name: Forensic Analyst
+  description: Can apply digital forensic techniques across various platforms including Windows, Linux and mobile devices; both host and network. 
+  icon: pe-7s-monitor
+
+# Feature
+- name: Empathy
+  description: Understanding the organisations and customer needs to work towards the ideal solution.
+  icon: pe-7s-users
+
+# Feature
+- name: Incident Response
+  description: Can function in the technical or the governance space when responding to cyber incidents.
+  icon: pe-7s-bandaid
+
+#####################################
+############# Our Blog ##############
+#####################################
+blog-title: Blog
+blog-description: Check out some of the recent posts that I've put together. Want to know something then send me a suggestion.
+
+#####################################
+############   Contact   ############
+#####################################
+contact-title: Contact
+contact-description: Have a suggestion for a topic? Have an opportunity that you want to share? Just want to ask a question? This is the place!
+
+
+#####################################
+#############   Footer   ############
+#####################################
+footer-description: You've managed to reach to bottom of my page. Hope it was bearable.
+footer-copyright-text: Constantly adding to a personal gantt chart.
+#footer-copyright-url: http://gleesik.ro/
+#footer-copyright-year: 2016
