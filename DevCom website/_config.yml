@@ -143,10 +143,110 @@ team-description: ...team...
 
 team:
   - avatar: profile.jpg
-    name: test
+    name: Ayan Agarwal
     tagline: test
-    youtube: test
-    pinterest: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Adarsh Raj
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Sahasra Ranjan
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Divyanshi Kamra
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Anagha Savit
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Aaron Jerry Ninan
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Satdhruti Paul
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Aditya Raj Singh
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Jayesh Singla
+    tagline: test
+    facebook: test
+    github: test
+  
+  - avatar: profile.jpg
+    name: Dev Moxaj Desai
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Aman Singh
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Devansh Jain
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Vibhav Aggarwal
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Bhavnoor Singh Marok
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Abhinav Gupta
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Arvind Murali
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Shruti Singh
+    tagline: test
+    facebook: test
+    github: test
+
+  - avatar: profile.jpg
+    name: Labdhi Gandhi
+    tagline: test
     facebook: test
     github: test
 
