@@ -3166,14 +3166,10 @@ header.site-header .header-banner .heading-title img {
   margin: auto;
   display: block;
   opacity: 0.1;
+  transition: 0.3s;
 }
 
 header.site-header .header-banner .heading-title img:hover {
-  border-radius: 3%;
-  width: 35%;
-  height: auto;
-  margin: auto;
-  display: block;
   opacity: 0.8;
 }
 
@@ -3556,14 +3552,10 @@ header.site-header .arrow-down-section .arrow-down i:before {
     display: block;
     margin: auto;
     opacity: 0.1;
+    transition: 0.3s;
   }
 
   header.site-header .header-banner .heading-title img:hover {
-    border-radius: 3%;
-    width: 60%;
-    height: auto;
-    display: block;
-    margin: auto;
     opacity: 0.8;
   }
 
@@ -3612,12 +3604,10 @@ header.site-header .arrow-down-section .arrow-down i:before {
     width: 80%;
     height: auto;
     opacity: 0.1;
+    transition: 0.3s;
   }
 
   header.site-header .header-banner .heading-title img:hover {
-    border-radius: 3%;
-    width: 80%;
-    height: auto;
     opacity: 0.8;
   }
 
