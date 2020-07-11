@@ -287,7 +287,7 @@ table {
   max-width: inherit;
   max-height: 140%;
   top: 50%;
-  left: 50%;
+  left: 54%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -3551,10 +3551,20 @@ header.site-header .arrow-down-section .arrow-down i:before {
   }
   header.site-header .header-banner .heading-title img {
     border-radius: 3%;
-    width: 70%;
+    width: 60%;
     height: auto;
     display: block;
     margin: auto;
+    opacity: 0.1;
+  }
+
+  header.site-header .header-banner .heading-title img:hover {
+    border-radius: 3%;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+    opacity: 0.8;
   }
 
 
@@ -3599,8 +3609,31 @@ header.site-header .arrow-down-section .arrow-down i:before {
   }
   header.site-header .header-banner .heading-title img {
     border-radius: 3%;
-    width: 100%;
+    width: 80%;
     height: auto;
+    opacity: 0.1;
+  }
+
+  header.site-header .header-banner .heading-title img:hover {
+    border-radius: 3%;
+    width: 80%;
+    height: auto;
+    opacity: 0.8;
+  }
+
+  .parallax .cover img {
+    position: absolute;
+    display: block;
+    width: auto;
+    min-width: 10%;
+    min-height: 120%;
+    max-width: inherit;
+    max-height: 140%;
+    top: 50%;
+    left: 100%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 
 }

@@ -91,7 +91,7 @@
 
           </h2>
           <hr class="small">
-          <h1 class="thin">Unkoalified OSCP Guide</h1>
+          <h1 class="thin">RPi TV Moticeboard</h1>
         </div>
 
       </div>
@@ -184,118 +184,44 @@
         <br>
       </div>
       <div class="article-title">
-        <h3 class="title">Unkoalified OSCP Guide</h3>
+        <h3 class="title">RPi TV Moticeboard</h3>
         <h4 class="category">Certification</h4>
       </div>
     </header>
 
     <!-- Article Content -->
     <div class="article-content">
-      <p><strong>UPDATE: I have since learned you have to do some lab time before attempting an exam. Get the shortest amount and do what’s suggested here.</strong></p>
+      <h1 id="rpi-tv-noticeboard">RPi TV Noticeboard</h1>
 
-<p>Offensive Security says “Try Harder!” I say “Try Google!”.</p>
+<h3 id="about">About</h3>
 
-<p>Up front I don’t think you need to pay for any more than the minimum lab time to pass the exam.</p>
+<p>The contents of this folder are to be copied to the RPi. There are 3 essential parts-</p>
+<ul>
+  <li><strong>fetch.py</strong>: A Python script that runs in the background and periodically fetches images from the server. We set up a cron job for this.</li>
+  <li><strong>gui.py</strong>: The main script that runs on boot and occupies the foreground. This displays the images on the TV.</li>
+  <li><strong>config.json</strong>: Helps you define the configuration for how you want the images to appear on the TV.</li>
+</ul>
 
-<p>I’m going to recommend you pay for a few things but they will be cheaper that paying for even the shortest lab time. As a disclaimer I receive no payment from any of the recommendations it’s just what I personnally use.</p>
+<h3 id="setup">Setup</h3>
 
-<p>Hopefully you’ll find this blog post short and helpful so let’s get into it.</p>
-<p>&nbsp;</p>
-<h2 id="my-background">My Background</h2>
-<p>&nbsp;</p>
-<p>When I first started I had no background in pentesting. What I had done was maybe three of the <strong>easy</strong> hack the box machines.</p>
-<p>&nbsp;</p>
-<h2 id="tools-youll-need">Tools you’ll need</h2>
-<p>&nbsp;</p>
-<p>Something to run your virtual machine. I use <a href="https://www.vmware.com/au/products/workstation-pro.html">VMWare Workstation Pro</a>, I paid for this license because I use it for work as well. If you’re going to keep doing stuff like this then I think it’s a good investment if you just want to try it OSCP out then use <a href="https://www.vmware.com/au/products/workstation-player/workstation-player-evaluation.html">VMWare Player</a> which will do the same thing but it’s free.</p>
-
-<p>The latest stable <a href="https://www.kali.org/downloads/">Kali Linux 64-Bit</a>. If you did purchase the PWK course it will recommend to use theirs but it is riddled with problems and you only need it for one course exercise.</p>
-
-<p>At this point I can’t even remember how I started learning about VMWare but I’m sure you can Try Google!</p>
-
-<p>Once it’s installed there are a few key tools in Kali that I used all the time:</p>
-
-<p><strong>Cherry Tree</strong> - This should be installed by default and I will show you how I took notes later.</p>
-
-<p><strong>tmux</strong> - An easy to use terminal, <code class="language-plaintext highlighter-rouge">sudo apt-get install tmux</code>. Ham Vocke has a good blog <a href="https://www.hamvocke.com/blog/a-    quick-and-easy-guide-to-tmux/">here</a>.</p>
-
-<p><strong>xclip</strong> - Allows the user to <code class="language-plaintext highlighter-rouge">cat</code> a file and pipe it to <code class="language-plaintext highlighter-rouge">xclip -sel c</code> which puts the contents onto your clipboard. Install with <code class="language-plaintext highlighter-rouge">sudo apt-get install xclip</code>.</p>
-
-<p><strong>nmapautomator</strong> - The enumeration tool I use for HTB and all of the exam machines. The user 21y4d created the tool to use during their OSCP exam, check it out <a href="https://github.com/21y4d/nmapAutomator">here</a>.</p>
-<p>&nbsp;</p>
-<h2 id="what-to-study">What to study</h2>
-<p>&nbsp;</p>
-<p>These suggestions are somewhat in order.</p>
-
-<p>I had no idea what to do in Linux and the tricks in the command line. Over The Wire’s <a href="https://overthewire.org/wargames/bandit/">Bandit</a> is awesome and it’s free!</p>
-
-<p><a href="https://www.hackthebox.eu/">Hack The Box</a>… goes without saying. <strong>Buy a VIP subscription!</strong> This will allow you to do the retired boxes. Then do the following:</p>
-
-<p>Complete the boxes compiled by tjnull which can be found <a href="https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=1839402159">here</a>. If you want to read the blog post look <a href="https://www.netsecfocus.com/oscp/2019/03/29/The_Journey_to_Try_Harder-_TJNulls_Preparation_Guide_for_PWK_OSCP.html#capture-the-flag-competitions-ctfscyber-competitions">here</a>.</p>
-
-<p>Try the boxes in order (kind of a difficulty rating) when you get stuck watch how <a href="https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA">IPPSEC</a> does it and then continue on by yourself.</p>
-
-<p>On each machine take notes in Cherry Tree. I used a template like the image below and then stored extra information about the machine like nmap scans or ssh keys in sub nodes. This was a suggestion from my friend <a href="https://github.com/Apr4h">Apr4h</a>, make sure to check out their work.</p>
-<p>&nbsp;</p>
-<p><img src="https://cybercodebear.github.io/images/blog/oscp-process.png" alt="process image" /></p>
-
-<p>The buffer overflow box is just a skill you learn. justinsteven wrote a great tutorial called <a href="https://github.com/justinsteven/dostackbufferoverflowgood">dostackbufferoverflowgood</a>. Make sure you do them and don’t just read the PDF. You’ll need a Windows VM networked in VMWare to exploit some of the examples.</p>
-<p>&nbsp;</p>
-<h2 id="what-to-read">What to read</h2>
-<p>&nbsp;</p>
-<p>Google “how to pass OSCP” and read as many blogs as you can, they will all give you references. Save references as bookmarks if you find them useful.</p>
-
-<p>Save the exploits you use in HTB and document how you used them so you can replicate it during the exam if you need to.</p>
-
-<p>Your own documentation will be invaluable.</p>
-<p>&nbsp;</p>
-<h2 id="exam-tips">Exam tips</h2>
-<p>&nbsp;</p>
-<p>Eat good food.</p>
-
-<p>Take breaks.</p>
-
-<p>Have a good nights sleep before and during the exam.</p>
-
-<p>Have a doggo keep you company.</p>
-<p>&nbsp;</p>
-<p><img src="https://cybercodebear.github.io/images/blog/oscp-moo_burrito2.png" alt="moo burrito image" /></p>
-
-<p>During my first attempt I spent way too long on the buffer overflow machine but in the end I think the binary on the test machine was different from the victim machine.</p>
-
-<p>To prepare for my second attempt I pretty much followed the advice I’m giving here and got the buffer overflow in under 2 hours. Then I got both 20pt machines, and the 10pt machine. All of these I got root on in less then 12 hours and then had a good sleep and spent the rest of the time trying to get the 25pt machine.</p>
-
-<p>Getting your exam ticket and booking a good time for yourself is key. I started around 7am both times so I was fresh from a good nights sleep.</p>
-
-<p>There are 5 exam machines:</p>
-
-<p>25pts = buffer overflow (follow the process, pretty easy)</p>
-
-<p>25pts = hard machine (multiple vulnerbilities strung together)</p>
-
-<p>20pts = med machine (pretty easily found open source)</p>
-
-<p>20pts = med machine (pretty easily found open source)</p>
-
-<p>10pts = easy machine (should be obvious single step)</p>
-<p>&nbsp;</p>
-<h2 id="report">Report</h2>
-<p>&nbsp;</p>
-<p>whoisflynn passed their exam with an updated template. I found it easy to use, check it out on <a href="https://github.com/whoisflynn/OSCP-Exam-Report-Template">whoisflynn’s github page</a></p>
-<p>&nbsp;</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>&nbsp;</p>
-<p>So what’s the final cost?</p>
-
-<p>HTB VIP membership</p>
-
-<p>Minimum OSCP lab time + exam ticket</p>
-
-<p>Time.</p>
-
-<p>I achieved my goal of completing what I’ve just listed above before doing my exam and I passed (the second time).</p>
-
-<p>Don’t be afriad of failing the first time either. You’ll gain valuable experience and figure out your weaknesses. Plus it’s much cheaper than purchasing the labs.</p>
+<ol>
+  <li>Install a standard Raspbian OS on the RPi.</li>
+  <li>Configure the RPi to connect to internet. If it is an RPi-3, connect using wifi. Follow the <a href="https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md">official docs</a> to learn how to connect through wifi. To connect to IITB-Wireless, use the wpa_supplicant.conf specified <a href="https://gist.github.com/nihal111/56a0317fb61596cd17f2bb080591ba40">here</a>. For RPi 2 or below, connect using an external wifi module or ethernet.</li>
+  <li>SSH into the RPi.</li>
+  <li>On the RPi clone repositories on desktop. <code class="language-plaintext highlighter-rouge">git clone git@github.com:MayuBhattu/RPi-Logs.git</code> and <code class="language-plaintext highlighter-rouge">git@github.com:MayuBhattu/RPI_Modified.git</code></li>
+  <li>On the RPi, execute <code class="language-plaintext highlighter-rouge">sudo apt-get install python-tk python-imaging python-imaging-tk x11-xserver-utils</code> or <code class="language-plaintext highlighter-rouge">sudo apt-get install python-imaging python-imaging-tk</code> or <code class="language-plaintext highlighter-rouge">sudo apt-get install python3-pil python3-pil.imagetk</code></li>
+  <li>On the RPi, execute <code class="language-plaintext highlighter-rouge">sudo crontab -e</code>. It might prompt you to choose a text editor. (Choose nano if you don’t know what to do.) Add the following line at the bottom of the file- <code class="language-plaintext highlighter-rouge">0 */2 * * * (sleep 5; killall python3; cd /home/pi/Desktop/RPI_Modified; python3 fetch.py &gt;&gt; /home/pi/Desktop/RPi-Logs/9/TV_log.txt 2&gt;&amp;1; cd /home/pi/Desktop/RPI_Modified; bash ./launcher.sh)</code>. This would run our fetch script every 6 hours and save all output in the TV_log file created inside <code class="language-plaintext highlighter-rouge">~/rpi</code>. Execute crontab -e and add the following - <code class="language-plaintext highlighter-rouge">15 1 * * * (cd /home/pi/Desktop/RPI_Modified; bash ./automate.sh &gt;&gt; /home/pi/Desktop/Repo_error.log 2&gt;&amp;1)</code> and <code class="language-plaintext highlighter-rouge">15 2 * * * (cd /home/pi/Desktop/RPi-Logs; bash ./automate.sh &gt;&gt; /home/pi/Desktop/Logs_error.log 2&gt;&amp;1)</code> and <code class="language-plaintext highlighter-rouge">0 12 * * * (reboot now)</code>.</li>
+  <li>On the RPi, cd into the <code class="language-plaintext highlighter-rouge">RPI_Modified</code> folder and execute <code class="language-plaintext highlighter-rouge">chmod 755 launcher.sh</code>.</li>
+  <li>On the RPi, execute <code class="language-plaintext highlighter-rouge">sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart</code>. Add the following line to the bottom- <code class="language-plaintext highlighter-rouge">@sh /home/pi/Desktop/RPI_Modified/launcher.sh</code>.</li>
+  <li>Disable standby screen blanking. Execute <code class="language-plaintext highlighter-rouge">sudo nano ~/.config/lxsession/LXDE-pi/autostart</code> and add the following
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@xset s 0 0
+@xset s noblank
+@xset s noexpose
+@xset dpms 0 0 0
+</code></pre></div>    </div>
+    <p>Ctrl + X, Y and Enter. Hit <code class="language-plaintext highlighter-rouge">sudo reboot</code></p>
+  </li>
+</ol>
 
     </div>
 
