@@ -4102,17 +4102,28 @@ section.parallax-features-section header.section-header hr {
 }
 
 section.parallax-features-section .section-features {
+  align-items: center;
   margin-top: 80px;
 }
 
-section.parallax-features-section .section-features .phone img {
-  margin-bottom: -50%;
-  border-radius: 3%;
+/* section.parallax-fetures-section .section-features #popup {
+  display: none;
+  border: 1px solid white;
+  width: 50%;
+} */
+
+section.parallax-features-section .section-features .phone {
+  transition: all 0.2s ease-in-out;
+}
+
+section.parallax-features-section .section-features .phone:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 section.parallax-features-section .section-features .phone img {
-  margin-bottom: -50%;
-  border-radius: 3%;
+  margin-bottom: 50px;
+  border-radius: 40px;
 }
 
 section.parallax-features-section .section-features .text-left {
