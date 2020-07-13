@@ -320,9 +320,9 @@ core-title: Projects
 core-description: Currently open to opportunities within cyber security. Below is a small portion of what I can offer.
 
 #
-# Core Features Left
+# Core Features Instiapp
 #
-core-features-left:
+core-features-instiapp-left:
 
 # Feature
 - name: Values Driven
@@ -344,10 +344,103 @@ core-features-left:
   description: Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.
   icon: pe-7s-file
 
+core-features-instiapp-right:
+
+# Feature
+- name: Results Oriented
+  description: Clearly defines outcomes and strives to deliver outstanding results.
+  icon: pe-7s-cup
+
+# Feature
+- name: Forensic Analyst
+  description: Can apply digital forensic techniques across various platforms including Windows, Linux and mobile devices; both host and network. 
+  icon: pe-7s-monitor
+
+# Feature
+- name: Empathy
+  description: Understanding the organisations and customer needs to work towards the ideal solution.
+  icon: pe-7s-users
+
+# Feature
+- name: Incident Response
+  description: Can function in the technical or the governance space when responding to cyber incidents.
+  icon: pe-7s-bandaid
+
 #
-# Core Features Right
+# Core Features Cerium
 #
-core-features-right:
+
+core-features-cerium-left:
+
+# Feature
+- name: Values Driven
+  description: Professionalism, integrity, innovation, teamwork, excellence, dedication are my top values.
+  icon: pe-7s-user
+
+# Feature
+- name: Time Management
+  description: Prioritisation of tasks to ensure deadlines are met.
+  icon: pe-7s-wristwatch
+
+# Feature
+- name: Social
+  description: A good work culture is important. This is built through effectively building work relationships with my team. 
+  icon: pe-7s-coffee
+
+# Feature
+- name: Reporting
+  description: Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.
+  icon: pe-7s-file
+
+core-features-cerium-right:
+
+# Feature
+- name: Results Oriented
+  description: Clearly defines outcomes and strives to deliver outstanding results.
+  icon: pe-7s-cup
+
+# Feature
+- name: Forensic Analyst
+  description: Can apply digital forensic techniques across various platforms including Windows, Linux and mobile devices; both host and network. 
+  icon: pe-7s-monitor
+
+# Feature
+- name: Empathy
+  description: Understanding the organisations and customer needs to work towards the ideal solution.
+  icon: pe-7s-users
+
+# Feature
+- name: Incident Response
+  description: Can function in the technical or the governance space when responding to cyber incidents.
+  icon: pe-7s-bandaid
+
+#
+# Core Features Noticeboard
+#
+
+core-features-noticeboard-left:
+
+# Feature
+- name: Values Driven
+  description: Professionalism, integrity, innovation, teamwork, excellence, dedication are my top values.
+  icon: pe-7s-user
+
+# Feature
+- name: Time Management
+  description: Prioritisation of tasks to ensure deadlines are met.
+  icon: pe-7s-wristwatch
+
+# Feature
+- name: Social
+  description: A good work culture is important. This is built through effectively building work relationships with my team. 
+  icon: pe-7s-coffee
+
+# Feature
+- name: Reporting
+  description: Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.
+  icon: pe-7s-file
+
+core-features-noticeboard-right:
 
 # Feature
 - name: Results Oriented

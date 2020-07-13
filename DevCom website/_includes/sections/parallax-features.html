@@ -8,28 +8,93 @@
 
   <div class="container">
 
-    <!-- Section Heading -->
     <div class="row text-center">
 
-      <!-- Section Header -->
+  
       <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
         <h2 style="color: #cce4ff">{{ site.core-title }}</h2>
         <hr class="normal">
       </header>
 
-      <!-- Section Content -->
+      
       <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
         <p>{{ site.core-description }}</p>
       </div>
 
     </div>
 
-    <!-- Section Features -->
     <div class="row section-features">
+
+      <div class="col-md-4 phone" style="padding: auto; margin: auto;" onclick="instiapp()">
+        <img src="{{ site.baseurl }}/images/instiapp-new.png" style="max-width: 350px; height: 200px;" alt="InstiApp" />
+      </div>
+
+      <div class="col-md-4 phone" style="padding: auto; margin: auto;" onclick="cerium()">
+        <img src="{{ site.baseurl }}/images/temp1.jpg" style="max-width: 350px; height: 200px;" alt="InstiApp" />
+      </div>
+
+      <div class="col-md-4 phone" style="padding: auto; margin: auto;" onclick="noticeboard()">
+        <img src="{{ site.baseurl }}/images/temp2.png" style="max-width: 350px; height: 200px;" alt="InstiApp" />
+      </div>
+
+    </div>
+
+    <div id="instiapp-popup" style="display: none;">
+
+      <div class="row section-features">
+
+        <div class="col-md-4 col-sm-6 text-right">
+  
+          {% for feature in site.core-features-instiapp-left %}
+  
+          <div class="feature">
+            <div class="text-wrap">
+              <h3>{{ feature.name }}</h3>
+              <p>{{ feature.description }}</p>
+            </div>
+            <div class="icon-wrap">
+              <div class="circle parent">
+                <i class="{{ feature.icon }} child-center"></i>
+              </div>
+            </div>
+          </div>
+  
+          {% endfor %}
+  
+        </div>
+  
+        <div class="col-md-4 phone">
+          <span style="width: 100px;"></span>
+        </div>
+  
+        <div class="col-md-4 col-sm-6 text-left">
+  
+          {% for feature in site.core-features-instiapp-right %}
+  
+          <div class="feature">
+            <div class="text-wrap">
+              <h3>{{ feature.name }}</h3>
+              <p>{{ feature.description }}</p>
+            </div>
+            <div class="icon-wrap">
+              <div class="circle parent">
+                <i class="{{ feature.icon }} child-center"></i>
+              </div>
+            </div>
+          </div>
+  
+          {% endfor %}
+  
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="row section-features" id="cerium-popup" style="display: none;">
 
       <div class="col-md-4 col-sm-6 text-right">
 
-        {% for feature in site.core-features-left %}
+        {% for feature in site.core-features-cerium-left %}
 
         <div class="feature">
           <div class="text-wrap">
@@ -48,13 +113,12 @@
       </div>
 
       <div class="col-md-4 phone">
-        <img src="{{ site.baseurl }}/images/instiapp-new.png" style="max-width: 100%; height: auto;" alt="InstiApp" />
-        <!-- <img src="{{ site.baseurl }}/images/phone.png" alt="Phone Image" /> -->
+        <span style="width: 100px;"></span>
       </div>
 
       <div class="col-md-4 col-sm-6 text-left">
 
-        {% for feature in site.core-features-right %}
+        {% for feature in site.core-features-cerium-right %}
 
         <div class="feature">
           <div class="text-wrap">
@@ -74,5 +138,68 @@
 
     </div>
 
-  </div>
+    <div class="row section-features" id="noticeboard-popup" style="display: none;">
+
+      <div class="col-md-4 col-sm-6 text-right">
+
+        {% for feature in site.core-features-noticeboard-left %}
+
+        <div class="feature">
+          <div class="text-wrap">
+            <h3>{{ feature.name }}</h3>
+            <p>{{ feature.description }}</p>
+          </div>
+          <div class="icon-wrap">
+            <div class="circle parent">
+              <i class="{{ feature.icon }} child-center"></i>
+            </div>
+          </div>
+        </div>
+
+        {% endfor %}
+
+      </div>
+
+      <div class="col-md-4 phone">
+        <span style="width: 100px;"></span>
+      </div>
+
+      <div class="col-md-4 col-sm-6 text-left">
+
+        {% for feature in site.core-features-noticeboard-right %}
+
+        <div class="feature">
+          <div class="text-wrap">
+            <h3>{{ feature.name }}</h3>
+            <p>{{ feature.description }}</p>
+          </div>
+          <div class="icon-wrap">
+            <div class="circle parent">
+              <i class="{{ feature.icon }} child-center"></i>
+            </div>
+          </div>
+        </div>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+  </div> 
 </section>
+
+<script>
+  function instiapp() {
+    document.getElementById("instiapp-popup").style.display = "block";
+  }
+
+  function cerium() {
+    document.getElementById("cerium-popup").style.display = "block";
+  }
+
+  function noticeboard() {
+    document.getElementById("noticeboard-popup").style.display = "block";
+  }
+
+</script>
