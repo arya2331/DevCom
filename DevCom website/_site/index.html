@@ -418,26 +418,156 @@
 
     <div class="row section-features">
 
-      <div class="col-md-4 phone" style="padding: auto; margin: auto;">
+      <div class="col-md-4 phone" style="padding: auto; margin: auto;" onclick="instiapp()">
         <img src="/images/instiapp-new.png" style="max-width: 350px; height: 200px;" alt="InstiApp" />
       </div>
 
-      <div class="col-md-4 phone" style="padding: auto; margin: auto;">
+      <div class="col-md-4 phone" style="padding: auto; margin: auto;" onclick="cerium()">
         <img src="/images/temp1.jpg" style="max-width: 350px; height: 200px;" alt="InstiApp" />
       </div>
 
-      <div class="col-md-4 phone" style="padding: auto; margin: auto;">
+      <div class="col-md-4 phone" style="padding: auto; margin: auto;" onclick="noticeboard()">
         <img src="/images/temp2.png" style="max-width: 350px; height: 200px;" alt="InstiApp" />
       </div>
 
-      <!-- <div id="popup">
-        This is popup.
-      </div> -->
-
     </div>
 
+    <div id="instiapp-popup" style="display: none;">
 
-    <!-- <div class="row section-features">
+      <div class="row section-features">
+
+        <div class="col-md-4 col-sm-6 text-right">
+  
+          
+  
+          <div class="feature">
+            <div class="text-wrap">
+              <h3>Values Driven</h3>
+              <p>Professionalism, integrity, innovation, teamwork, excellence, dedication are my top values.</p>
+            </div>
+            <div class="icon-wrap">
+              <div class="circle parent">
+                <i class="pe-7s-user child-center"></i>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+          <div class="feature">
+            <div class="text-wrap">
+              <h3>Time Management</h3>
+              <p>Prioritisation of tasks to ensure deadlines are met.</p>
+            </div>
+            <div class="icon-wrap">
+              <div class="circle parent">
+                <i class="pe-7s-wristwatch child-center"></i>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+          <div class="feature">
+            <div class="text-wrap">
+              <h3>Social</h3>
+              <p>A good work culture is important. This is built through effectively building work relationships with my team.</p>
+            </div>
+            <div class="icon-wrap">
+              <div class="circle parent">
+                <i class="pe-7s-coffee child-center"></i>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+          <div class="feature">
+            <div class="text-wrap">
+              <h3>Reporting</h3>
+              <p>Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.</p>
+            </div>
+            <div class="icon-wrap">
+              <div class="circle parent">
+                <i class="pe-7s-file child-center"></i>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+        </div>
+  
+        <div class="col-md-4 phone">
+          <span style="width: 100px;"></span>
+        </div>
+  
+        <div class="col-md-4 col-sm-6 text-left">
+  
+          
+  
+          <div class="feature">
+            <div class="text-wrap">
+              <h3>Results Oriented</h3>
+              <p>Clearly defines outcomes and strives to deliver outstanding results.</p>
+            </div>
+            <div class="icon-wrap">
+              <div class="circle parent">
+                <i class="pe-7s-cup child-center"></i>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+          <div class="feature">
+            <div class="text-wrap">
+              <h3>Forensic Analyst</h3>
+              <p>Can apply digital forensic techniques across various platforms including Windows, Linux and mobile devices; both host and network.</p>
+            </div>
+            <div class="icon-wrap">
+              <div class="circle parent">
+                <i class="pe-7s-monitor child-center"></i>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+          <div class="feature">
+            <div class="text-wrap">
+              <h3>Empathy</h3>
+              <p>Understanding the organisations and customer needs to work towards the ideal solution.</p>
+            </div>
+            <div class="icon-wrap">
+              <div class="circle parent">
+                <i class="pe-7s-users child-center"></i>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+          <div class="feature">
+            <div class="text-wrap">
+              <h3>Incident Response</h3>
+              <p>Can function in the technical or the governance space when responding to cyber incidents.</p>
+            </div>
+            <div class="icon-wrap">
+              <div class="circle parent">
+                <i class="pe-7s-bandaid child-center"></i>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="row section-features" id="cerium-popup" style="display: none;">
 
       <div class="col-md-4 col-sm-6 text-right">
 
@@ -567,11 +697,157 @@
 
       </div>
 
-    </div> -->
+    </div>
+
+    <div class="row section-features" id="noticeboard-popup" style="display: none;">
+
+      <div class="col-md-4 col-sm-6 text-right">
+
+        
+
+        <div class="feature">
+          <div class="text-wrap">
+            <h3>Values Driven</h3>
+            <p>Professionalism, integrity, innovation, teamwork, excellence, dedication are my top values.</p>
+          </div>
+          <div class="icon-wrap">
+            <div class="circle parent">
+              <i class="pe-7s-user child-center"></i>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="feature">
+          <div class="text-wrap">
+            <h3>Time Management</h3>
+            <p>Prioritisation of tasks to ensure deadlines are met.</p>
+          </div>
+          <div class="icon-wrap">
+            <div class="circle parent">
+              <i class="pe-7s-wristwatch child-center"></i>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="feature">
+          <div class="text-wrap">
+            <h3>Social</h3>
+            <p>A good work culture is important. This is built through effectively building work relationships with my team.</p>
+          </div>
+          <div class="icon-wrap">
+            <div class="circle parent">
+              <i class="pe-7s-coffee child-center"></i>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="feature">
+          <div class="text-wrap">
+            <h3>Reporting</h3>
+            <p>Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.</p>
+          </div>
+          <div class="icon-wrap">
+            <div class="circle parent">
+              <i class="pe-7s-file child-center"></i>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <div class="col-md-4 phone">
+        <span style="width: 100px;"></span>
+      </div>
+
+      <div class="col-md-4 col-sm-6 text-left">
+
+        
+
+        <div class="feature">
+          <div class="text-wrap">
+            <h3>Results Oriented</h3>
+            <p>Clearly defines outcomes and strives to deliver outstanding results.</p>
+          </div>
+          <div class="icon-wrap">
+            <div class="circle parent">
+              <i class="pe-7s-cup child-center"></i>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="feature">
+          <div class="text-wrap">
+            <h3>Forensic Analyst</h3>
+            <p>Can apply digital forensic techniques across various platforms including Windows, Linux and mobile devices; both host and network.</p>
+          </div>
+          <div class="icon-wrap">
+            <div class="circle parent">
+              <i class="pe-7s-monitor child-center"></i>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="feature">
+          <div class="text-wrap">
+            <h3>Empathy</h3>
+            <p>Understanding the organisations and customer needs to work towards the ideal solution.</p>
+          </div>
+          <div class="icon-wrap">
+            <div class="circle parent">
+              <i class="pe-7s-users child-center"></i>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="feature">
+          <div class="text-wrap">
+            <h3>Incident Response</h3>
+            <p>Can function in the technical or the governance space when responding to cyber incidents.</p>
+          </div>
+          <div class="icon-wrap">
+            <div class="circle parent">
+              <i class="pe-7s-bandaid child-center"></i>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+    </div>
 
   </div> 
 </section>
 
+<script>
+  function instiapp() {
+    document.getElementById("instiapp-popup").style.display = "block";
+  }
+
+  function cerium() {
+    document.getElementById("cerium-popup").style.display = "block";
+  }
+
+  function noticeboard() {
+    document.getElementById("noticeboard-popup").style.display = "block";
+  }
+
+</script>
 
 <!-- Team Section -->
 <section class="site-section team-section section-focus" id="team">
