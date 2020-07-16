@@ -25,7 +25,7 @@
   <!-- Parallax Header Image -->
   <div class="parallax-wrapper">
     <div class="cover" data-scrollax="properties: { 'translateY': '48%' }">
-      <img src="/images/code.png" alt="DevCom code import" />
+      <img src="/images/fromIITB.jpg" alt="DevCom code import" />
     </div>
   </div>
 
@@ -433,9 +433,11 @@
 
     </div>
 
-    <div id="instiapp-popup" style="display: none;">
+      <div class="row section-features" id="instiapp-popup" style="display: none;">
 
-      <div class="row section-features">
+        <div class="close-button">
+          <button onclick="instiappclose()">Close!</button>
+        </div>
 
         <div class="col-md-4 col-sm-6 text-right">
   
@@ -499,8 +501,8 @@
   
         </div>
   
-        <div class="col-md-4 phone">
-          <span style="width: 100px;"></span>
+        <div class="col-md-4 popup" style="padding: auto; margin: auto;">
+          <img src="/images/instiapp-new.png" alt="InstiApp" />
         </div>
   
         <div class="col-md-4 col-sm-6 text-left">
@@ -566,9 +568,12 @@
         </div>
   
       </div>
-    </div>
 
     <div class="row section-features" id="cerium-popup" style="display: none;">
+
+      <div class="close-button">
+        <button onclick="ceriumclose()">Close!</button>
+      </div>
 
       <div class="col-md-4 col-sm-6 text-right">
 
@@ -632,8 +637,8 @@
 
       </div>
 
-      <div class="col-md-4 phone">
-        <span style="width: 100px;"></span>
+      <div class="col-md-4 popup" style="padding: auto; margin: auto;">
+        <img src="/images/temp1.jpg" alt="InstiApp" />
       </div>
 
       <div class="col-md-4 col-sm-6 text-left">
@@ -702,6 +707,10 @@
 
     <div class="row section-features" id="noticeboard-popup" style="display: none;">
 
+      <div class="close-button">
+        <button onclick="noticeboardclose()">Close!</button>
+      </div>
+
       <div class="col-md-4 col-sm-6 text-right">
 
         
@@ -764,8 +773,8 @@
 
       </div>
 
-      <div class="col-md-4 phone">
-        <span style="width: 100px;"></span>
+      <div class="col-md-4 popup" style="padding: auto; margin: auto;">
+        <img src="/images/temp2.png" alt="InstiApp" />
       </div>
 
       <div class="col-md-4 col-sm-6 text-left">
@@ -840,12 +849,24 @@
     document.getElementById("instiapp-popup").style.display = "block";
   }
 
+  function instiappclose() {
+    document.getElementById("instiapp-popup").style.display = "none";
+  }
+
   function cerium() {
     document.getElementById("cerium-popup").style.display = "block";
   }
 
+  function ceriumclose() {
+    document.getElementById("cerium-popup").style.display = "none";
+  }
+
   function noticeboard() {
     document.getElementById("noticeboard-popup").style.display = "block";
+  }
+
+  function noticeboardclose() {
+    document.getElementById("noticeboard-popup").style.display = "none";
   }
 
 </script>
@@ -879,7 +900,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/Ayan Agrawal - Ayan Agrawal.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Ayan Agarwal</h3>
@@ -904,7 +925,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/final - Adarsh Raj.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Adarsh Raj</h3>
@@ -929,7 +950,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/profile3 - Sahasra Ranjan.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Sahasra Ranjan</h3>
@@ -954,7 +975,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/IMG-20200101-WA0074 - Divyanshi kamra.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Divyanshi Kamra</h3>
@@ -979,7 +1000,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/AnaghaSavit.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Anagha Savit</h3>
@@ -1004,7 +1025,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/20190824_124036 - Aaron Jerry Ninan.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Aaron Jerry Ninan</h3>
@@ -1029,7 +1050,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/Satdhruti Paul - Satdhruti Paul.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Satdhruti Paul</h3>
@@ -1054,7 +1075,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/aditya - ADITYA RAJ SINGH UDAWAT.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Aditya Raj Singh</h3>
@@ -1079,7 +1100,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/IMG-20200709-WA0006 - Jayesh Singla.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Jayesh Singla</h3>
@@ -1104,7 +1125,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/DevDesai.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Dev Moxaj Desai</h3>
@@ -1129,7 +1150,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/amanSingh - Aman Singh.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Aman Singh</h3>
@@ -1179,7 +1200,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/vibhav - Vibhav Aggarwal.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Vibhav Aggarwal</h3>
@@ -1204,7 +1225,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/bhavnoor copy - Bhavnoor Singh Marok.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Bhavnoor Singh Marok</h3>
@@ -1229,7 +1250,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/IMG_20200116_004154 - Abhinav Gupta.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Abhinav Gupta</h3>
@@ -1254,7 +1275,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/Arvind - Arvind Murali.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Arvind Murali</h3>
@@ -1279,7 +1300,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/Shruti Singh - Shruti.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Shruti Singh</h3>
@@ -1304,7 +1325,7 @@
       <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
         <div class="team-member">
           <div class="img-wrapper">
-            <img src="/images/avatars/profile.jpg" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
+            <img src="/images/avatars/Labdhi - Labdhi Gandhi.png" alt="Avatar Team Member" style="border-radius: 50%; width: 50%; margin: auto; margin-top: auto; " />
           </div>
           <div class="team-member-content">
             <h3 class="name">Labdhi Gandhi</h3>
