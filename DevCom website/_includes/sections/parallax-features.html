@@ -199,28 +199,43 @@
 </section>
 
 <script>
+
+  function disableScroll() { 
+    document.body.classList.add("stop-scrolling");
+  } 
+  
+  function enableScroll() { 
+    document.body.classList.remove("stop-scrolling");
+  }
+
   function instiapp() {
     document.getElementById("instiapp-popup").style.display = "block";
+    disableScroll();
   }
 
   function instiappclose() {
     document.getElementById("instiapp-popup").style.display = "none";
+    enableScroll();
   }
 
   function cerium() {
     document.getElementById("cerium-popup").style.display = "block";
+    disableScroll();
   }
 
   function ceriumclose() {
     document.getElementById("cerium-popup").style.display = "none";
+    enableScroll();
   }
 
   function noticeboard() {
     document.getElementById("noticeboard-popup").style.display = "block";
+    disableScroll();
   }
 
   function noticeboardclose() {
     document.getElementById("noticeboard-popup").style.display = "none";
+    enableScroll();
   }
 
 </script>

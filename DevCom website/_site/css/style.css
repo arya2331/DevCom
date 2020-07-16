@@ -4165,6 +4165,15 @@ section.parallax-features-section .section-features .phone img {
  .
  .*/
 
+.stop-scrolling { 
+  height: 100%; 
+  overflow: hidden; 
+} 
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+}
+
 section.parallax-features-section #instiapp-popup {
   position: fixed;
   top: -50px;
@@ -4176,17 +4185,21 @@ section.parallax-features-section #instiapp-popup {
   background-color: #923cb5;
   background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
   z-index: 10; 
+  transform: scale(0.85);
+  
 }
 
 section.parallax-features-section #instiapp-popup .popup img {
   border-radius: 40px;
-  width: 500px;
+  width: 300px;
+  margin: auto;
 }
 
 section.parallax-features-section #instiapp-popup .close-button {
   position: relative;
   top: 30px;
-  left: 30px;
+  left: 80%;
+  transform: scale(0.8);
 }
 
 section.parallax-features-section #cerium-popup {
@@ -4199,18 +4212,21 @@ section.parallax-features-section #cerium-popup {
 
   background-color: #923cb5;
   background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
-  z-index: 10; 
+  z-index: 10;
+  transform: scale(0.85);
 }
 
 section.parallax-features-section #cerium-popup .popup img {
   border-radius: 40px;
-  width: 500px;
+  width: 300px;
+  margin: auto;
 }
 
 section.parallax-features-section #cerium-popup .close-button {
   position: relative;
   top: 30px;
-  left: 30px;
+  left: 80%;
+  transform: scale(0.8);
 }
 
 section.parallax-features-section #noticeboard-popup {
@@ -4223,18 +4239,21 @@ section.parallax-features-section #noticeboard-popup {
 
   background-color: #923cb5;
   background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
-  z-index: 10; 
+  z-index: 10;
+  transform: scale(0.85);
 }
 
 section.parallax-features-section #noticeboard-popup .popup img {
   border-radius: 40px;
-  width: 500px;
+  width: 300px;
+  margin: auto;
 }
 
 section.parallax-features-section #noticeboard-popup .close-button {
   position: relative;
   top: 30px;
-  left: 30px;
+  left: 80%;
+  transform: scale(0.8);
 }
 
 /* Added codes end here 
