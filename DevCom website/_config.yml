@@ -94,7 +94,7 @@ about-widget:
   author-avatar: codebear.jpg
   author-name: Alex Desmond
   author-tagline: Hobbyist
-  author-info: Interested in infosec both at work and home. 
+  author-info: Interested in infosec both at work and home.
   author-social-links:
     youtube: 'https://www.youtube.com/channel/UC5JmJiob-C9u9tWhRXD-rag'
     twitter: 'https://twitter.com/cybercodebear'
@@ -113,7 +113,7 @@ about-widget:
 #####################################
 #############   About   #############
 #####################################
-# about-title: 
+# about-title:
 about-description: This is the official page for the Developer's Community of IIT Bombay. Envisioned as the group of best developers of the Institute, the team is responsible for developing and maintaining InstiApp, and other dev/tech related projects in the Institute.
 
 #####################################
@@ -125,7 +125,7 @@ features-description: ...features...
 features:
   - icon: pe-7s-vector
     title: test1
-    description: test 
+    description: test
 
   - icon: pe-7s-help2
     title: test2
@@ -320,9 +320,9 @@ core-title: Projects
 core-description: Currently open to opportunities within cyber security. Below is a small portion of what I can offer.
 
 #
-# Core Features Instiapp
+# Core Features Left
 #
-core-features-instiapp-left:
+core-features-left:
 
 # Feature
 - name: Values Driven
@@ -336,7 +336,7 @@ core-features-instiapp-left:
 
 # Feature
 - name: Social
-  description: A good work culture is important. This is built through effectively building work relationships with my team. 
+  description: A good work culture is important. This is built through effectively building work relationships with my team.
   icon: pe-7s-coffee
 
 # Feature
@@ -344,7 +344,10 @@ core-features-instiapp-left:
   description: Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.
   icon: pe-7s-file
 
-core-features-instiapp-right:
+#
+# Core Features Right
+#
+core-features-right:
 
 # Feature
 - name: Results Oriented
@@ -353,103 +356,7 @@ core-features-instiapp-right:
 
 # Feature
 - name: Forensic Analyst
-  description: Can apply digital forensic techniques across various platforms including Windows, Linux and mobile devices; both host and network. 
-  icon: pe-7s-monitor
-
-# Feature
-- name: Empathy
-  description: Understanding the organisations and customer needs to work towards the ideal solution.
-  icon: pe-7s-users
-
-# Feature
-- name: Incident Response
-  description: Can function in the technical or the governance space when responding to cyber incidents.
-  icon: pe-7s-bandaid
-
-#
-# Core Features Cerium
-#
-
-core-features-cerium-left:
-
-# Feature
-- name: Values Driven
-  description: Professionalism, integrity, innovation, teamwork, excellence, dedication are my top values.
-  icon: pe-7s-user
-
-# Feature
-- name: Time Management
-  description: Prioritisation of tasks to ensure deadlines are met.
-  icon: pe-7s-wristwatch
-
-# Feature
-- name: Social
-  description: A good work culture is important. This is built through effectively building work relationships with my team. 
-  icon: pe-7s-coffee
-
-# Feature
-- name: Reporting
-  description: Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.
-  icon: pe-7s-file
-
-core-features-cerium-right:
-
-# Feature
-- name: Results Oriented
-  description: Clearly defines outcomes and strives to deliver outstanding results.
-  icon: pe-7s-cup
-
-# Feature
-- name: Forensic Analyst
-  description: Can apply digital forensic techniques across various platforms including Windows, Linux and mobile devices; both host and network. 
-  icon: pe-7s-monitor
-
-# Feature
-- name: Empathy
-  description: Understanding the organisations and customer needs to work towards the ideal solution.
-  icon: pe-7s-users
-
-# Feature
-- name: Incident Response
-  description: Can function in the technical or the governance space when responding to cyber incidents.
-  icon: pe-7s-bandaid
-
-#
-# Core Features Noticeboard
-#
-
-core-features-noticeboard-left:
-
-# Feature
-- name: Values Driven
-  description: Professionalism, integrity, innovation, teamwork, excellence, dedication are my top values.
-  icon: pe-7s-user
-
-# Feature
-- name: Time Management
-  description: Prioritisation of tasks to ensure deadlines are met.
-  icon: pe-7s-wristwatch
-
-# Feature
-- name: Social
-  description: A good work culture is important. This is built through effectively building work relationships with my team. 
-  icon: pe-7s-coffee
-
-# Feature
-- name: Reporting
-  description: Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.
-  icon: pe-7s-file
-
-core-features-noticeboard-right:
-
-# Feature
-- name: Results Oriented
-  description: Clearly defines outcomes and strives to deliver outstanding results.
-  icon: pe-7s-cup
-
-# Feature
-- name: Forensic Analyst
-  description: Can apply digital forensic techniques across various platforms including Windows, Linux and mobile devices; both host and network. 
+  description: Can apply digital forensic techniques across various platforms including Windows, Linux and mobile devices; both host and network.
   icon: pe-7s-monitor
 
 # Feature
