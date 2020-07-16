@@ -287,7 +287,7 @@ table {
   max-width: inherit;
   max-height: 140%;
   top: 50%;
-  left: 54%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -4147,6 +4147,7 @@ section.parallax-features-section .section-features .phone:hover {
 section.parallax-features-section .section-features .phone img {
   margin-bottom: 50px;
   border-radius: 40px;
+  width: 350px;
 }
 
 section.parallax-features-section .section-features .text-left {
@@ -4217,25 +4218,31 @@ section.parallax-features-section .section-features .feature:hover .icon-wrap .c
 
 @media (max-width: 991px) {
   section.parallax-features-section .section-features .phone {
-    display: none;
+    display: flex;
+  }
+  section.parallax-features-section .section-features .phone img{
+    margin: auto;
+    margin-bottom: 50px;
+    width: 250px;
   }
   section.parallax-features-section .section-features .text-left {
     margin-top: 10%;
   }
   section.parallax-features-section .section-features .text-left .icon-wrap {
-    margin-right: 30px;
-    float: left;
+    margin-right: auto;
   }
   section.parallax-features-section .section-features .text-right {
     margin-top: 10%;
-    text-align: left;
+    text-align: center;
   }
   section.parallax-features-section .section-features .text-right .icon-wrap {
-    margin-left: 0;
-    margin-right: 30px;
-    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
   }
 }
+
+
 
 /**
  *
