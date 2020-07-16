@@ -25,7 +25,7 @@
   <!-- Parallax Header Image -->
   <div class="parallax-wrapper">
     <div class="cover" data-scrollax="properties: { 'translateY': '48%' }">
-      <img src="/images/code.png" alt="DevCom code import" />
+      <img src="/images/fromIITB.jpg" alt="DevCom code import" />
     </div>
   </div>
 
@@ -433,9 +433,11 @@
 
     </div>
 
-    <div id="instiapp-popup" style="display: none;">
+      <div class="row section-features" id="instiapp-popup" style="display: none;">
 
-      <div class="row section-features">
+        <div class="close-button">
+          <button onclick="instiappclose()">Close!</button>
+        </div>
 
         <div class="col-md-4 col-sm-6 text-right">
   
@@ -443,8 +445,8 @@
   
         </div>
   
-        <div class="col-md-4 phone">
-          <span style="width: 100px;"></span>
+        <div class="col-md-4 popup" style="padding: auto; margin: auto;">
+          <img src="/images/instiapp-new.png" alt="InstiApp" />
         </div>
   
         <div class="col-md-4 col-sm-6 text-left">
@@ -454,9 +456,12 @@
         </div>
   
       </div>
-    </div>
 
     <div class="row section-features" id="cerium-popup" style="display: none;">
+
+      <div class="close-button">
+        <button onclick="ceriumclose()">Close!</button>
+      </div>
 
       <div class="col-md-4 col-sm-6 text-right">
 
@@ -464,8 +469,8 @@
 
       </div>
 
-      <div class="col-md-4 phone">
-        <span style="width: 100px;"></span>
+      <div class="col-md-4 popup" style="padding: auto; margin: auto;">
+        <img src="/images/temp1.jpg" alt="InstiApp" />
       </div>
 
       <div class="col-md-4 col-sm-6 text-left">
@@ -478,14 +483,18 @@
 
     <div class="row section-features" id="noticeboard-popup" style="display: none;">
 
+      <div class="close-button">
+        <button onclick="noticeboardclose()">Close!</button>
+      </div>
+
       <div class="col-md-4 col-sm-6 text-right">
 
         
 
       </div>
 
-      <div class="col-md-4 phone">
-        <span style="width: 100px;"></span>
+      <div class="col-md-4 popup" style="padding: auto; margin: auto;">
+        <img src="/images/temp2.png" alt="InstiApp" />
       </div>
 
       <div class="col-md-4 col-sm-6 text-left">
@@ -504,12 +513,24 @@
     document.getElementById("instiapp-popup").style.display = "block";
   }
 
+  function instiappclose() {
+    document.getElementById("instiapp-popup").style.display = "none";
+  }
+
   function cerium() {
     document.getElementById("cerium-popup").style.display = "block";
   }
 
+  function ceriumclose() {
+    document.getElementById("cerium-popup").style.display = "none";
+  }
+
   function noticeboard() {
     document.getElementById("noticeboard-popup").style.display = "block";
+  }
+
+  function noticeboardclose() {
+    document.getElementById("noticeboard-popup").style.display = "none";
   }
 
 </script>
