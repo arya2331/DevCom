@@ -4182,11 +4182,11 @@ section.parallax-features-section #instiapp-popup {
   padding: -100px 50px 50px 30px;
   border-radius: 50px;
 
-  background-color: #923cb5;
-  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
+
   z-index: 10; 
   transform: scale(0.85);
-  
+
 }
 
 section.parallax-features-section #instiapp-popup .popup img {
@@ -4210,8 +4210,7 @@ section.parallax-features-section #cerium-popup {
   padding: -100px 50px 50px 30px;
   border-radius: 50px;
 
-  background-color: #923cb5;
-  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
   z-index: 10;
   transform: scale(0.85);
 }
@@ -4237,8 +4236,7 @@ section.parallax-features-section #noticeboard-popup {
   padding: -100px 50px 50px 30px;
   border-radius: 50px;
 
-  background-color: #923cb5;
-  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
   z-index: 10;
   transform: scale(0.85);
 }
@@ -4308,7 +4306,7 @@ section.parallax-features-section .section-features .feature .text-wrap h3 {
 }
 
 section.parallax-features-section .section-features .feature .text-wrap p {
-  color: #bdc3c7;
+  color: #d7dcdf;
   font-size: 0.875rem;
 }
 
