@@ -423,9 +423,11 @@
 
     </div>
 
-    <div id="instiapp-popup" style="display: none;">
+      <div class="row section-features" id="instiapp-popup" style="display: none;">
 
-      <div class="row section-features">
+        <div class="close-button">
+          <button onclick="instiappclose()">Close!</button>
+        </div>
 
         <div class="col-md-4 col-sm-6 text-right">
   
@@ -433,8 +435,8 @@
   
         </div>
   
-        <div class="col-md-4 phone">
-          <span style="width: 100px;"></span>
+        <div class="col-md-4 popup" style="padding: auto; margin: auto;">
+          <img src="/images/instiapp-new.png" alt="InstiApp" />
         </div>
   
         <div class="col-md-4 col-sm-6 text-left">
@@ -444,9 +446,12 @@
         </div>
   
       </div>
-    </div>
 
     <div class="row section-features" id="cerium-popup" style="display: none;">
+
+      <div class="close-button">
+        <button onclick="ceriumclose()">Close!</button>
+      </div>
 
       <div class="col-md-4 col-sm-6 text-right">
 
@@ -454,8 +459,8 @@
 
       </div>
 
-      <div class="col-md-4 phone">
-        <span style="width: 100px;"></span>
+      <div class="col-md-4 popup" style="padding: auto; margin: auto;">
+        <img src="/images/temp1.jpg" alt="InstiApp" />
       </div>
 
       <div class="col-md-4 col-sm-6 text-left">
@@ -468,14 +473,18 @@
 
     <div class="row section-features" id="noticeboard-popup" style="display: none;">
 
+      <div class="close-button">
+        <button onclick="noticeboardclose()">Close!</button>
+      </div>
+
       <div class="col-md-4 col-sm-6 text-right">
 
         
 
       </div>
 
-      <div class="col-md-4 phone">
-        <span style="width: 100px;"></span>
+      <div class="col-md-4 popup" style="padding: auto; margin: auto;">
+        <img src="/images/temp2.png" alt="InstiApp" />
       </div>
 
       <div class="col-md-4 col-sm-6 text-left">
@@ -490,16 +499,43 @@
 </section>
 
 <script>
+
+  function disableScroll() { 
+    document.body.classList.add("stop-scrolling");
+  } 
+  
+  function enableScroll() { 
+    document.body.classList.remove("stop-scrolling");
+  }
+
   function instiapp() {
     document.getElementById("instiapp-popup").style.display = "block";
+    disableScroll();
+  }
+
+  function instiappclose() {
+    document.getElementById("instiapp-popup").style.display = "none";
+    enableScroll();
   }
 
   function cerium() {
     document.getElementById("cerium-popup").style.display = "block";
+    disableScroll();
+  }
+
+  function ceriumclose() {
+    document.getElementById("cerium-popup").style.display = "none";
+    enableScroll();
   }
 
   function noticeboard() {
     document.getElementById("noticeboard-popup").style.display = "block";
+    disableScroll();
+  }
+
+  function noticeboardclose() {
+    document.getElementById("noticeboard-popup").style.display = "none";
+    enableScroll();
   }
 
 </script>

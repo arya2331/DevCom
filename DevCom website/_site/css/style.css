@@ -4160,6 +4160,126 @@ section.parallax-features-section .section-features .phone img {
   width: 350px;
 }
 
+ /* Added Codes Starts here .
+ .
+ .
+ 
+ .
+ .
+ .
+ 
+ .
+ 
+ .
+ .
+ .
+ .*/
+
+.stop-scrolling { 
+  height: 100%; 
+  overflow: hidden; 
+} 
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+}
+
+section.parallax-features-section #instiapp-popup {
+  position: fixed;
+  top: -50px;
+  left: 100px;
+  right: 100px;
+  padding: -100px 50px 50px 30px;
+  border-radius: 50px;
+
+  background-color: #923cb5;
+  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  z-index: 10; 
+  transform: scale(0.85);
+  
+}
+
+section.parallax-features-section #instiapp-popup .popup img {
+  border-radius: 40px;
+  width: 300px;
+  margin: auto;
+}
+
+section.parallax-features-section #instiapp-popup .close-button {
+  position: relative;
+  top: 30px;
+  left: 80%;
+  transform: scale(0.8);
+}
+
+section.parallax-features-section #cerium-popup {
+  position: fixed;
+  top: -50px;
+  left: 100px;
+  right: 100px;
+  padding: -100px 50px 50px 30px;
+  border-radius: 50px;
+
+  background-color: #923cb5;
+  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  z-index: 10;
+  transform: scale(0.85);
+}
+
+section.parallax-features-section #cerium-popup .popup img {
+  border-radius: 40px;
+  width: 300px;
+  margin: auto;
+}
+
+section.parallax-features-section #cerium-popup .close-button {
+  position: relative;
+  top: 30px;
+  left: 80%;
+  transform: scale(0.8);
+}
+
+section.parallax-features-section #noticeboard-popup {
+  position: fixed;
+  top: -50px;
+  left: 100px;
+  right: 100px;
+  padding: -100px 50px 50px 30px;
+  border-radius: 50px;
+
+  background-color: #923cb5;
+  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  z-index: 10;
+  transform: scale(0.85);
+}
+
+section.parallax-features-section #noticeboard-popup .popup img {
+  border-radius: 40px;
+  width: 300px;
+  margin: auto;
+}
+
+section.parallax-features-section #noticeboard-popup .close-button {
+  position: relative;
+  top: 30px;
+  left: 80%;
+  transform: scale(0.8);
+}
+
+/* Added codes end here 
+.
+.
+.
+.
+.
+.
+.
+.
+.
+..
+..
+*/
+
 section.parallax-features-section .section-features .text-left {
   margin-top: 10%;
 }
@@ -4171,6 +4291,7 @@ section.parallax-features-section .section-features .text-left .icon-wrap {
 
 section.parallax-features-section .section-features .text-right {
   margin-top: 10%;
+
 }
 
 section.parallax-features-section .section-features .text-right .icon-wrap {
