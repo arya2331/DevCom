@@ -318,6 +318,10 @@ portfolio:
 core-title: Projects
 core-description: Envisioned as the group of best developers of the Institute, the team is responsible for developing and maintaining InstiApp, Cerium and RPI Noticeboard and many other dev/tech related projects. Details regarding each of them can be accessed below.
 
+instiapp-github: 
+cerium-github: 
+noticeboard-github: 
+
 #
 # Core Features Instiapp Left
 #
@@ -380,9 +384,9 @@ core-features-cerium-left:
   icon: pe-7s-coffee
 
 # Feature
-- name: Reporting
-  description: Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.
-  icon: pe-7s-file
+# - name: Reporting
+#   description: Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.
+#   icon: pe-7s-file
 
 #
 # Core Features Cerium Right
@@ -405,9 +409,9 @@ core-features-cerium-right:
   icon: pe-7s-users
 
 # Feature
-- name: Incident Response
-  description: Can function in the technical or the governance space when responding to cyber incidents.
-  icon: pe-7s-bandaid
+# - name: Incident Response
+#   description: Can function in the technical or the governance space when responding to cyber incidents.
+#   icon: pe-7s-bandaid
 
 
 #
@@ -431,9 +435,9 @@ core-features-noticeboard-left:
   icon: pe-7s-coffee
 
 # Feature
-- name: Reporting
-  description: Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.
-  icon: pe-7s-file
+# - name: Reporting
+#   description: Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.
+#   icon: pe-7s-file
 
 #
 # Core Features Noticeboard Right
@@ -456,9 +460,9 @@ core-features-noticeboard-right:
   icon: pe-7s-users
 
 # Feature
-- name: Incident Response
-  description: Can function in the technical or the governance space when responding to cyber incidents.
-  icon: pe-7s-bandaid
+# - name: Incident Response
+#   description: Can function in the technical or the governance space when responding to cyber incidents.
+#   icon: pe-7s-bandaid
 
 
 #####################################

@@ -4203,18 +4203,41 @@ section.parallax-features-section #instiapp-popup {
 
 }
 
+section.parallax-features-section #instiapp-popup .popup {
+  margin: 0px auto;
+  align-items: center;
+}
+
 section.parallax-features-section #instiapp-popup .popup img {
   border-radius: 40px;
-  width: 300px;
-  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+section.parallax-features-section #instiapp-popup .popup .logo {
+  margin-top: 60px;
+  padding: auto;
+  text-align: center;
+
+}
+
+section.parallax-features-section #instiapp-popup .popup .logo i {
+  transform: scale(4);
 }
 
 section.parallax-features-section #instiapp-popup .close-button {
-  position: relative;
-  top: 30px;
-  left: 80%;
-  transform: scale(0.8);
+  margin: 0;
+  overflow: hidden;
 }
+
+section.parallax-features-section #instiapp-popup .close-button button{
+  transform: scale(0.7);
+  float: right;
+}
+
+/* Cerium project part styling starts here */
 
 section.parallax-features-section #cerium-popup {
   position: fixed;
@@ -4225,22 +4248,47 @@ section.parallax-features-section #cerium-popup {
   border-radius: 50px;
 
   background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
-  z-index: 10;
+
+  z-index: 10; 
   transform: scale(0.85);
+
+}
+
+section.parallax-features-section #cerium-popup .popup {
+  margin: 0px auto;
+  align-items: center;
 }
 
 section.parallax-features-section #cerium-popup .popup img {
   border-radius: 40px;
-  width: 300px;
-  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+section.parallax-features-section #cerium-popup .popup .logo {
+  margin-top: 60px;
+  padding: auto;
+  text-align: center;
+
+}
+
+section.parallax-features-section #cerium-popup .popup .logo i {
+  transform: scale(4);
 }
 
 section.parallax-features-section #cerium-popup .close-button {
-  position: relative;
-  top: 30px;
-  left: 80%;
-  transform: scale(0.8);
+  margin: 0;
+  overflow: hidden;
 }
+
+section.parallax-features-section #cerium-popup .close-button button{
+  transform: scale(0.7);
+  float: right;
+}
+
+/* Noticeboard styling */
 
 section.parallax-features-section #noticeboard-popup {
   position: fixed;
@@ -4255,17 +4303,38 @@ section.parallax-features-section #noticeboard-popup {
   transform: scale(0.85);
 }
 
+section.parallax-features-section #noticeboard-popup .popup {
+  margin: 0px auto;
+  align-items: center;
+}
+
+
 section.parallax-features-section #noticeboard-popup .popup img {
   border-radius: 40px;
   width: 300px;
   margin: auto;
 }
 
+section.parallax-features-section #noticeboard-popup .popup .logo {
+  margin-top: 60px;
+  padding: auto;
+  text-align: center;
+
+}
+
+section.parallax-features-section #noticeboard-popup .popup .logo i {
+  transform: scale(4);
+}
+
+
 section.parallax-features-section #noticeboard-popup .close-button {
-  position: relative;
-  top: 30px;
-  left: 80%;
-  transform: scale(0.8);
+  margin: 0;
+  overflow: hidden;
+}
+
+section.parallax-features-section #noticeboard-popup .close-button button{
+  transform: scale(0.7);
+  float: right;
 }
 
 /* Added codes end here 
@@ -4283,7 +4352,7 @@ section.parallax-features-section #noticeboard-popup .close-button {
 */
 
 section.parallax-features-section .section-features .text-left {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 section.parallax-features-section .section-features .text-left .icon-wrap {
@@ -4292,8 +4361,7 @@ section.parallax-features-section .section-features .text-left .icon-wrap {
 }
 
 section.parallax-features-section .section-features .text-right {
-  margin-top: 10%;
-
+  margin-top: 5%;
 }
 
 section.parallax-features-section .section-features .text-right .icon-wrap {
@@ -4373,7 +4441,6 @@ section.parallax-features-section .section-features .feature:hover .icon-wrap .c
     margin-right: auto;
     float: center;
   }
-
 }
 
 
