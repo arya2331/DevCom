@@ -279,26 +279,29 @@ table {
 }
 
 .parallax .cover img {
-  position: absolute;
+  position: fixed;
   display: block;
   width: auto;
-  min-width: 100%;
+  /*min-width: 100%;*/
   min-height: 120%;
-  max-width: inherit;
+  max-width: 100%;
   max-height: 140%;
-  top: 50%;
-  left: 50%;
+  top: -10%;
+  left: 0;
+  object-fit: cover;
+  background-position: center;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+          transform: scale(1.6);
 }
 
 .parallax .cover .content {
-  position: absolute;
+  /*position: absolute;*/
   display: block;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 100%;
+  height: 50%;
   z-index: 2;
 }
 
@@ -3612,18 +3615,20 @@ header.site-header .arrow-down-section .arrow-down i:before {
   }
 
   .parallax .cover img {
-    position: absolute;
+    position: fixed;
     display: block;
-    width: auto;
-    min-width: 10%;
+    width: 100%;
+    /*min-width: 10%;*/
     min-height: 120%;
-    max-width: inherit;
-    max-height: 140%;
-    top: 50%;
-    left: 100%;
+    /*max-width: inherit;*/
+    max-height: 100%;
+    /*top: -25%;*/
+    /*left: -160%;*/
+    object-fit: cover;
+    object-position: 45% 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+            transform: scale(1);
   }
 
 }
@@ -4359,6 +4364,7 @@ section.parallax-features-section .section-features .feature:hover .icon-wrap .c
     margin-right: auto;
     float: center;
   }
+
 }
 
 
