@@ -78,10 +78,9 @@ banner-link: https://cybercodebear.github.io
 ####################################
 ######  Global Social Links   ######
 ####################################
-youtube: 'https://www.youtube.com/channel/UC5JmJiob-C9u9tWhRXD-rag'
-twitter: 'https://twitter.com/cybercodebear'
-reddit: 'https://www.reddit.com/user/alexjamesdesmond/'
-linkedin: 'https://www.linkedin.com/in/alexjamesdesmond/'
+linkedin: 'https://www.linkedin.com/company/devcom-iit-bombay/'
+facebook: 'https://www.facebook.com/devcom.iitbombay/'
+github: 'https://github.com/wncc/instiapp-android'
 
 #########################
 ######   Widgets   ######
@@ -317,7 +316,7 @@ portfolio:
 ##########  Core Features  ##########
 #####################################
 core-title: Projects
-core-description: Currently open to opportunities within cyber security. Below is a small portion of what I can offer.
+core-description: Envisioned as the group of best developers of the Institute, the team is responsible for developing and maintaining InstiApp, Cerium and RPI Noticeboard and many other dev/tech related projects. Details regarding each of them can be accessed below.
 
 #
 # Core Features Instiapp Left
@@ -325,24 +324,19 @@ core-description: Currently open to opportunities within cyber security. Below i
 core-features-instiapp-left:
 
 # Feature
-- name: Values Driven
-  description: Professionalism, integrity, innovation, teamwork, excellence, dedication are my top values.
+- name: Events Feed
+  description: The main feed will have only updates from Users and Entities that a User follows.
   icon: pe-7s-user
 
 # Feature
-- name: Time Management
-  description: Prioritisation of tasks to ensure deadlines are met.
-  icon: pe-7s-wristwatch
-
-# Feature
-- name: Social
-  description: A good work culture is important. This is built through effectively building work relationships with my team.
+- name: Placement Blog
+  description: The Placement/Training blog is available inside the app with the option to get notifications for All posts / posts with certain keywords.
   icon: pe-7s-coffee
 
 # Feature
-- name: Reporting
-  description: Experienced writing reports conveying strategic risk based on technical vulnerabilities and exploits.
-  icon: pe-7s-file
+- name: Timetable
+  description: The user can create his academic timetable (manually, by adding courses) within the app itself. User will get an option to select predefined slots based on the Institute TImetable
+  icon: pe-7s-wristwatch
 
 #
 # Core Features Instiapp Right
@@ -350,24 +344,20 @@ core-features-instiapp-left:
 core-features-instiapp-right:
 
 # Feature
-- name: Results Oriented
-  description: Clearly defines outcomes and strives to deliver outstanding results.
+- name: Mess Menu
+  description: The mess menu for all hostels is available as a list (with the user’s hostel’s current day menu occupying the top position)
   icon: pe-7s-cup
 
 # Feature
-- name: Forensic Analyst
-  description: Can apply digital forensic techniques across various platforms including Windows, Linux and mobile devices; both host and network.
-  icon: pe-7s-monitor
-
-# Feature
-- name: Empathy
-  description: Understanding the organisations and customer needs to work towards the ideal solution.
+- name: Calendar
+  description: The Calendar for the major bodies (Cult/Tech/any other body with a public calendar) will be available under this heading.
   icon: pe-7s-users
 
 # Feature
-- name: Incident Response
-  description: Can function in the technical or the governance space when responding to cyber incidents.
-  icon: pe-7s-bandaid
+- name: Map
+  description: The institute map along with current position and all currently active events visible as clickable icons.
+  icon: pe-7s-monitor
+
 
 #
 # Core Features Cerium Left
@@ -488,6 +478,6 @@ contact-description: Have a suggestion for a topic? Have an opportunity that you
 #############   Footer   ############
 #####################################
 footer-description: You've managed to reach to bottom of my page. Hope it was bearable.
-footer-copyright-text: Constantly adding to a personal gantt chart.
+footer-copyright-text: Copyright 2020, DevCom IIT Bombay.
 #footer-copyright-url: http://gleesik.ro/
 #footer-copyright-year: 2016
