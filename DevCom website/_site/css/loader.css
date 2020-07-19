@@ -29,8 +29,10 @@
 .page-loader > img{
   height: 120px;
   width: 40px;
-  left: 50%;
+  left: 49%;
   top: 40%;
+  
+  
   transform-origin: bottom;
   opacity: 0.15;
   position: absolute;
@@ -166,3 +168,23 @@
           transform: translate3d(0, 0, 0);
 }
 
+
+
+@media (max-width: 550px) {
+  .page-loader > img{
+    height: 120px;
+    width: 40px;
+    left: 45%;
+    top: 40%;
+    
+    
+    transform-origin: bottom;
+    opacity: 0.15;
+    position: absolute;
+    -webkit-animation: spinner 2s infinite ease-in-out;
+    animation: spinner 2s infinite ease-in-out;
+    z-index: 100;
+    transform: translate(-50%, calc(-50%));
+  }
+
+}
