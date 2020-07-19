@@ -3635,7 +3635,6 @@ header.site-header .arrow-down-section .arrow-down i:before {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: scale(1);
-            
   }
   
   
@@ -4374,6 +4373,7 @@ section.parallax-features-section .section-features .feature:hover .icon-wrap .c
     margin-right: auto;
     float: center;
   }
+
 }
 
 
