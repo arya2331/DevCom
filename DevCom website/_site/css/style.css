@@ -4241,7 +4241,19 @@ section.parallax-features-section .section-features .phone img:hover {
   width: 0px;  /* Remove scrollbar space */
 }
 
+section.parallax-features-section #instiapp-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 9999999;
+}
+
 section.parallax-features-section #instiapp-popup {
+  display: block;
   position: fixed;
   top: -50px;
   left: 100px;
@@ -4251,7 +4263,7 @@ section.parallax-features-section #instiapp-popup {
 
   background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
 
-  z-index: 10; 
+  z-index: 99999999; 
   transform: scale(0.85);
 
 }
@@ -4292,7 +4304,19 @@ section.parallax-features-section #instiapp-popup .close-button button{
 
 /* Cerium project part styling starts here */
 
+section.parallax-features-section #cerium-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 9999999;
+}
+
 section.parallax-features-section #cerium-popup {
+  display: block;
   position: fixed;
   top: -50px;
   left: 100px;
@@ -4302,7 +4326,7 @@ section.parallax-features-section #cerium-popup {
 
   background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
 
-  z-index: 10; 
+  z-index: 99999999; 
   transform: scale(0.85);
 
 }
@@ -4343,7 +4367,19 @@ section.parallax-features-section #cerium-popup .close-button button{
 
 /* Noticeboard styling */
 
+section.parallax-features-section #noticeboard-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 9999999;
+}
+
 section.parallax-features-section #noticeboard-popup {
+  display: block;
   position: fixed;
   top: -50px;
   left: 100px;
@@ -4352,7 +4388,7 @@ section.parallax-features-section #noticeboard-popup {
   border-radius: 50px;
 
   background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
-  z-index: 10;
+  z-index: 99999999;
   transform: scale(0.85);
 }
 
