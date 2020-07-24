@@ -4293,7 +4293,11 @@ section.parallax-features-section #instiapp-popup .popup .logo i {
 }
 
 section.parallax-features-section #instiapp-popup .close-button {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 3px solid green;
   overflow: hidden;
 }
 
@@ -4356,7 +4360,10 @@ section.parallax-features-section #cerium-popup .popup .logo i {
 }
 
 section.parallax-features-section #cerium-popup .close-button {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
   overflow: hidden;
 }
 
@@ -4417,7 +4424,10 @@ section.parallax-features-section #noticeboard-popup .popup .logo i {
 
 
 section.parallax-features-section #noticeboard-popup .close-button {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
   overflow: hidden;
 }
 
