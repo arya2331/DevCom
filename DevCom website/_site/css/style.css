@@ -4248,7 +4248,7 @@ section.parallax-features-section #instiapp-modal {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.8);
   z-index: 9999999;
 }
 
@@ -4297,7 +4297,6 @@ section.parallax-features-section #instiapp-popup .close-button {
   margin-bottom: 0;
   margin-left: 20px;
   margin-right: 20px;
-  border: 3px solid green;
   overflow: hidden;
 }
 
@@ -4315,7 +4314,7 @@ section.parallax-features-section #cerium-modal {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.8);
   z-index: 9999999;
 }
 
@@ -4345,7 +4344,7 @@ section.parallax-features-section #cerium-popup .popup img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 50%;
 }
 
 section.parallax-features-section #cerium-popup .popup .logo {
@@ -4381,7 +4380,7 @@ section.parallax-features-section #noticeboard-modal {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.8);
   z-index: 9999999;
 }
 
@@ -4407,7 +4406,7 @@ section.parallax-features-section #noticeboard-popup .popup {
 
 section.parallax-features-section #noticeboard-popup .popup img {
   border-radius: 40px;
-  width: 300px;
+  width: 70%;
   margin: auto;
 }
 
